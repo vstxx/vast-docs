@@ -1,0 +1,26 @@
+{
+  "name": "vast-browser-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "validate": "node scripts/validate-docs.mjs",
+    "test": "npm run check && npm run validate",
+    "build": "astro build && node scripts/check-dist.mjs",
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:preview": "npm run build && wrangler versions upload"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.3",
+    "@astrojs/starlight": "0.41.7",
+    "astro": "7.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "typescript": "6.0.3",
+    "wrangler": "4.125.0"
+  }
+}
