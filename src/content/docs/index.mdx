@@ -1,90 +1,127 @@
 ---
-title: Vast Browser Docs
-description: The complete guide to Vast Browser — browsing, workspaces, privacy, local tools, Labs, extensions and development.
-template: splash
+title: Vast Browser documentation
+description: Learn how to install, configure, use, and troubleshoot Vast Browser.
 pagefind: false
 editUrl: false
 lastUpdated: false
-hero:
-  title: A browser workspace that stays yours.
-  tagline: Vast is a local-first desktop browser built around configurable browsing, workspaces and local tools.
-  image:
-    html: '<img src="/logos/vast-wordmark.png" alt="Vast" width="768" height="384">'
-  actions:
-    - text: Get started
-      link: /get-started/getting-started/
-      icon: right-arrow
-    - text: Browse settings
-      link: /customization/settings-reference/
-      variant: minimal
 ---
 
-<div class="vast-docs-home">
-  <p class="docs-support-note">Beta · Windows x64 is the actively tested release target.</p>
+<div class="docs-home-status" aria-label="Documentation status">
+  <span><strong>Current docs</strong> Vast 0.1.5</span>
+  <span><strong>Release status</strong> Beta</span>
+  <span><strong>Tested platform</strong> Windows x64</span>
+</div>
 
-  <section class="docs-home-section" aria-labelledby="docs-categories-title">
-    <div class="docs-home-section-heading">
-      <span>Explore the product</span>
-      <h2 id="docs-categories-title">Start with what you want to do.</h2>
-    </div>
-    <div class="docs-category-grid">
-      <a class="docs-category-card" href="/get-started/getting-started/">
-        <span class="docs-card-index">01</span>
-        <h3>Get Started</h3>
-        <p>Install Vast, understand a clean profile and learn the essential controls.</p>
-        <span class="docs-card-link">Open guide <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="docs-category-card" href="/using-vast/browsing-and-navigation/">
-        <span class="docs-card-index">02</span>
-        <h3>Browse</h3>
-        <p>Navigate tabs, layouts, workspaces, search, bookmarks and sessions.</p>
-        <span class="docs-card-link">Use Vast <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="docs-category-card" href="/privacy/privacy-and-security/">
-        <span class="docs-card-index">03</span>
-        <h3>Privacy &amp; Security</h3>
-        <p>Control permissions, site data, identity settings, backups and local history.</p>
-        <span class="docs-card-link">Review controls <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="docs-category-card" href="/labs/vast-labs/">
-        <span class="docs-card-index">04</span>
-        <h3>Vast Labs</h3>
-        <p>Opt into Automation, Password Manager, Network Devices and media tools.</p>
-        <span class="docs-card-link">Explore Labs <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="docs-category-card" href="/extensions/extensions/">
-        <span class="docs-card-index">05</span>
-        <h3>Extensions</h3>
-        <p>Install and manage Chrome-compatible, Vast-native and hybrid extensions.</p>
-        <span class="docs-card-link">Manage extensions <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="docs-category-card" href="/developers/developer-guide/">
-        <span class="docs-card-index">06</span>
-        <h3>Developers</h3>
-        <p>Build Vast, understand its public architecture and test integrations safely.</p>
-        <span class="docs-card-link">Read developer docs <span aria-hidden="true">→</span></span>
-      </a>
-    </div>
-  </section>
+## Start here
 
-  <section class="docs-principles" aria-labelledby="docs-principles-title">
-    <div class="docs-home-section-heading">
-      <span>Product principles</span>
-      <h2 id="docs-principles-title">Clear boundaries, visible choices.</h2>
-    </div>
-    <div class="docs-principle-list">
-      <article>
-        <span>Local-first</span>
-        <p>Core browser data is designed around storage on your device.</p>
+Choose a path based on what you are trying to do. Every guide links to the relevant settings and related features.
+
+<div class="docs-quick-grid">
+      <a class="docs-quick-card" href="/get-started/getting-started/">
+        <span class="docs-card-kicker">First run</span>
+        <strong>Set up Vast</strong>
+        <p>Install Vast, understand the clean profile, and learn the essential controls.</p>
+        <span class="docs-card-action">Open getting started <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="docs-quick-card" href="/customization/settings-reference/">
+        <span class="docs-card-kicker">Reference</span>
+        <strong>Find a setting</strong>
+        <p>Review every documented setting, its default, and where it applies.</p>
+        <span class="docs-card-action">Browse settings <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="docs-quick-card" href="/developers/troubleshooting/">
+        <span class="docs-card-kicker">Support</span>
+        <strong>Resolve a problem</strong>
+        <p>Work through common startup, browsing, extension, and local-tool issues.</p>
+        <span class="docs-card-action">Troubleshoot Vast <span aria-hidden="true">→</span></span>
+      </a>
+</div>
+
+## Browse by area
+
+The sidebar contains the complete navigation. These sections collect the most useful entry points.
+
+<div class="docs-directory">
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>01</span><a href="/using-vast/browsing-and-navigation/">Browsing &amp; navigation</a></div>
+        <p>Tabs, search, layouts, side panels, history, downloads, and keyboard workflows.</p>
+        <ul>
+          <li><a href="/using-vast/tabs-and-workspaces/">Tabs &amp; Workspaces</a></li>
+          <li><a href="/using-vast/keyboard-shortcuts/">Keyboard Shortcuts</a></li>
+          <li><a href="/using-vast/search-startup-and-session-restore/">Search &amp; Session Restore</a></li>
+        </ul>
       </article>
-      <article>
-        <span>Workspace identity</span>
-        <p>A workspace can carry its own persistent, shared or temporary browsing context.</p>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>02</span><a href="/tools/local-tools/">Local tools</a></div>
+        <p>Notes, PDF viewing, session snapshots, quick links, and other device-local tools.</p>
+        <ul>
+          <li><a href="/tools/notes/">Notes</a></li>
+          <li><a href="/tools/pdf-viewer/">PDF Viewer</a></li>
+          <li><a href="/tools/session-timeline/">Session Timeline</a></li>
+        </ul>
       </article>
-      <article>
-        <span>Explicit experiments</span>
-        <p>Labs and experimental features stay opt-in and are documented as such.</p>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>03</span><a href="/privacy/privacy-and-security/">Privacy &amp; security</a></div>
+        <p>Site permissions, local data, privacy controls, backups, and experimental identity tools.</p>
+        <ul>
+          <li><a href="/privacy/privacy-controls-reference/">Privacy Controls</a></li>
+          <li><a href="/privacy/site-data-and-permissions/">Site Data &amp; Permissions</a></li>
+          <li><a href="/privacy/data-backup-and-migration/">Backup &amp; Migration</a></li>
+        </ul>
       </article>
-    </div>
-  </section>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>04</span><a href="/extensions/extensions/">Extensions</a></div>
+        <p>Install and manage Chrome-compatible, Vast-native, and hybrid extensions.</p>
+        <ul>
+          <li><a href="/extensions/extensions/#sources">Extension sources</a></li>
+          <li><a href="/extensions/extensions/#runtime-types">Runtime types</a></li>
+          <li><a href="/extensions/extension-development/">Extension Development</a></li>
+        </ul>
+      </article>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>05</span><a href="/labs/vast-labs/">Vast Labs</a></div>
+        <p>Optional automation, password, network-device, diagnostics, and media experiments.</p>
+        <ul>
+          <li><a href="/labs/automation/">Automation</a></li>
+          <li><a href="/labs/password-manager/">Password Manager</a></li>
+          <li><a href="/labs/network-devices/">Network Devices</a></li>
+        </ul>
+      </article>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>06</span><a href="/customization/appearance-reference/">Customization</a></div>
+        <p>Appearance, interface behavior, feature preferences, and optional Cat Addon controls.</p>
+        <ul>
+          <li><a href="/customization/appearance-reference/">Appearance Reference</a></li>
+          <li><a href="/customization/settings-reference/">Settings Reference</a></li>
+          <li><a href="/customization/cat-addon/">Cat Addon</a></li>
+        </ul>
+      </article>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>07</span><a href="/developers/developer-guide/">Developer documentation</a></div>
+        <p>Build Vast, understand its public boundaries, and develop supported integrations.</p>
+        <ul>
+          <li><a href="/developers/architecture-overview/">Architecture Overview</a></li>
+          <li><a href="/developers/feature-availability/">Feature Availability</a></li>
+          <li><a href="/developers/known-limits/">Known Limits</a></li>
+        </ul>
+      </article>
+      <article class="docs-directory-card">
+        <div class="docs-directory-title"><span>08</span><a href="/developers/faq/">Help &amp; reference</a></div>
+        <p>Answers to common questions, complete references, and safe diagnostic guidance.</p>
+        <ul>
+          <li><a href="/developers/faq/">Frequently Asked Questions</a></li>
+          <li><a href="/developers/internal-pages/">Internal Pages</a></li>
+          <li><a href="/privacy/advanced-diagnostics/">Advanced Diagnostics</a></li>
+        </ul>
+      </article>
+</div>
+
+## Exact references
+
+Use the reference pages when you need a specific value instead of a guided walkthrough.
+
+<div class="docs-reference-links">
+  <a href="/customization/settings-reference/">Settings <span aria-hidden="true">→</span></a>
+  <a href="/using-vast/keyboard-shortcuts/">Shortcuts <span aria-hidden="true">→</span></a>
+  <a href="/developers/feature-availability/">Feature status <span aria-hidden="true">→</span></a>
 </div>

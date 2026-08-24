@@ -35,13 +35,15 @@ export default defineConfig({
         { tag: 'link', attrs: { rel: 'sitemap', href: '/sitemap-index.xml' } },
       ],
       sidebar: [
-        { label: 'Home', slug: 'index' },
+        { label: 'Documentation home', slug: 'index' },
         {
           label: 'Get Started',
+          collapsed: true,
           items: ['get-started/getting-started', 'get-started/installation-and-updates'],
         },
         {
           label: 'Using Vast',
+          collapsed: true,
           items: [
             'using-vast/browsing-and-navigation',
             'using-vast/interface-and-layouts',
@@ -57,10 +59,12 @@ export default defineConfig({
         },
         {
           label: 'Tools',
+          collapsed: true,
           items: ['tools/local-tools', 'tools/notes', 'tools/pdf-viewer', 'tools/session-timeline'],
         },
         {
           label: 'Privacy & Security',
+          collapsed: true,
           items: [
             'privacy/privacy-and-security',
             'privacy/privacy-controls-reference',
@@ -72,18 +76,22 @@ export default defineConfig({
         },
         {
           label: 'Extensions',
+          collapsed: true,
           items: ['extensions/extensions', 'extensions/extension-development'],
         },
         {
           label: 'Vast Labs',
+          collapsed: true,
           items: ['labs/vast-labs', 'labs/automation', 'labs/password-manager', 'labs/network-devices', 'labs/video-and-audio'],
         },
         {
           label: 'Customization',
+          collapsed: true,
           items: ['customization/appearance-reference', 'customization/settings-reference', 'customization/cat-addon'],
         },
         {
           label: 'Developers',
+          collapsed: true,
           items: [
             'developers/developer-guide',
             'developers/architecture-overview',
