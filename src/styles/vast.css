@@ -36,6 +36,7 @@
   --sl-font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --sl-content-width: 45rem;
   --sl-sidebar-width: 16.5rem;
+  --vast-toc-width: 15rem;
   --sl-content-pad-x: clamp(1.25rem, 3vw, 2.5rem);
   --sl-nav-height: 3.5rem;
   --sl-menu-button-size: 2.25rem;
@@ -119,6 +120,21 @@
 @media (min-width: 72rem) {
   :root {
     --sl-mobile-toc-height: 0rem;
+  }
+
+  .right-sidebar-container {
+    flex: 0 0 var(--vast-toc-width);
+    width: var(--vast-toc-width);
+  }
+
+  .right-sidebar {
+    inset-inline-end: 0;
+    width: var(--vast-toc-width);
+  }
+
+  [data-has-sidebar][data-has-toc] .main-pane {
+    --sl-content-margin-inline: auto;
+    width: calc(100% - var(--vast-toc-width));
   }
 }
 
@@ -429,9 +445,15 @@ starlight-menu-button[aria-expanded='true'] button,
 .right-sidebar-panel {
   max-height: calc(100vh - var(--sl-nav-height));
   overflow-y: auto;
-  padding-inline: var(--vast-space-5);
+  padding-inline: var(--vast-space-4);
   scrollbar-color: var(--vast-border-strong) transparent;
   scrollbar-width: thin;
+}
+
+.right-sidebar-panel .sl-container {
+  width: auto;
+  max-width: none;
+  margin-inline: 0;
 }
 
 .right-sidebar h2 {
