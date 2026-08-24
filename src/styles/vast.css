@@ -227,7 +227,7 @@ header.header {
 }
 
 .content-panel h1 {
-  max-width: 20ch;
+  max-width: 28ch;
   color: var(--sl-color-white);
   font-size: clamp(2rem, 3.2vw, 2.75rem);
   font-weight: 600;
