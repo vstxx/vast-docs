@@ -26,6 +26,7 @@ export default defineConfig({
       pagefind: true,
       lastUpdated: true,
       pagination: true,
+      credits: false,
       head: [
         { tag: 'meta', attrs: { property: 'og:site_name', content: 'Vast Browser Docs' } },
         { tag: 'meta', attrs: { property: 'og:type', content: 'website' } },
