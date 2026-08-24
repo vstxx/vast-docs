@@ -32,7 +32,7 @@ for (const file of files) {
   const description = frontmatter.match(/^description:\s*["']?([^\n"']+)/m)?.[1]?.trim();
   if (!title) failures.push(`${display}: missing title frontmatter`);
   if (!description) failures.push(`${display}: missing description frontmatter`);
-  if (display !== 'index.mdx' && /^#\s+/m.test(source.replace(/^---[\s\S]*?---\s*/, ''))) failures.push(`${display}: duplicate H1`);
+  if (/^#\s+/m.test(source.replace(/^---[\s\S]*?---\s*/, ''))) failures.push(`${display}: duplicate H1`);
   if (/gitbook\.io|\{%|\{% endhint|\/pages\/[A-Za-z0-9]+/.test(source)) failures.push(`${display}: contains a GitBook migration artifact`);
   if (/\b(?:relay\.vastbrowser\.com|controlpanel\.vastbrowser\.com)\b|vast:(?:relay|storage|passwords|network|browser):/.test(source)) failures.push(`${display}: contains a prohibited private implementation reference`);
   if (title) {
