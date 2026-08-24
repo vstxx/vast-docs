@@ -3,6 +3,12 @@
   "name": "vast-browser-docs",
   "compatibility_date": "2026-08-24",
   "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "docs.vastbrowser.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "html_handling": "auto-trailing-slash",
