@@ -16,6 +16,18 @@ Vast can be packaged as:
 
 The installer allows the application installation directory to be changed. Application files and user profile data are separate: changing where Vast is installed does not automatically move your browser profile.
 
+## Current public beta
+
+Vast `0.2.5` Public Beta was published for Windows x64 on 25 August 2026.
+
+* [Download the installer](https://github.com/vstxx/vast-public/releases/download/v0.2.5/Vast-Setup-0.2.5.exe)
+* [Download the portable build](https://github.com/vstxx/vast-public/releases/download/v0.2.5/Vast-0.2.5-Portable.exe)
+* [Open the complete release and verification files](https://github.com/vstxx/vast-public/releases/tag/v0.2.5)
+
+:::caution[Unsigned public beta]
+This release is intentionally not Authenticode-signed. Windows displays **Unknown publisher**, and SmartScreen may warn. Download it only from the Vast website or the `vstxx/vast-public` release, then compare its hash with the published `SHA256SUMS.txt` or `SHA512SUMS.txt` before running it.
+:::
+
 ## User data location
 
 On a standard installed Windows profile, Vast normally uses Electron's application-data location, typically:
@@ -38,9 +50,9 @@ An application update is not the same operation as **Clear cookies/site data on 
 
 ## Release authenticity
 
-Use official Vast release artifacts. Do not assume that a locally built executable, fork, repackaged installer, or third-party mirror has the same release verification, dependency set, or security posture as an official build.
+Use official Vast release artifacts. Do not assume that a locally built executable, fork, repackaged installer, or third-party mirror has the same release verification, dependency set, or security posture as the published Vast build.
 
-The private mechanics of release signing and update verification are intentionally not documented here.
+The public release includes checksums, exact-source metadata, updater metadata, dependency provenance, and FFmpeg corresponding source. The absence of an Authenticode signature in `0.2.5` is intentional and is recorded in the release metadata; it must not be mistaken for a signed release.
 
 ## Portable builds
 

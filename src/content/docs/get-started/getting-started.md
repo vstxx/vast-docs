@@ -7,7 +7,7 @@ Vast opens with one workspace and one New Tab on a clean profile. The default fi
 
 ## Install
 
-Use an official Vast release artifact. On Windows, Vast is distributed as an installer and a portable build. Because Vast is beta software, a release may display Windows publisher or SmartScreen warnings depending on how that build was signed and distributed.
+Use an official Vast release artifact. On Windows, Vast is distributed as an installer and a portable build. The current `0.2.5` Public Beta is intentionally unsigned, so Windows displays **Unknown publisher** and SmartScreen may warn. Check the published SHA-256 or SHA-512 value before running it.
 
 Do not treat a locally built development package as an official Vast release.
 
