@@ -7,6 +7,17 @@ Vast is local-first and does not collect browsing telemetry.
 
 Core browsing data remains on your device unless you explicitly use a feature that sends data elsewhere, such as visiting a website, using a network service, or exporting data yourself.
 
+## Separate data contexts
+
+Vast Browser, Vast Relay, the Extensions Hub, and independently published extensions do not have the same data practices:
+
+* **Vast Browser** does not send browsing history, URLs, searches, tabs, bookmarks, page content, passwords, or account identity to Vast as product analytics.
+* **Vast Relay**, when enabled, receives a random installation UUID, the running Vast version, cumulative launch count, and `instance_kind` (`packaged`, `development`, `test`, or `unknown`). Relay derives first-seen and last-seen timestamps. It does not receive browsing activity. Test cleanup is permitted only for records explicitly tagged `test`.
+* **Extensions Hub** processes a publisher's GitHub identity/profile, session and CSRF records, keyed IP hashes for rate limiting, D1/R2 listings and artifacts, automated and human review records, audit events, versioned Publisher Terms acceptances, and extension reports. Artifacts and evidence may be retained for distribution, security response, disputes, and legal compliance.
+* **Publisher extensions** are independent software. Their listings must state requested permissions, data practices, and remote services. A publisher privacy-policy URL is required whenever an extension transmits data or uses external processing.
+
+Vast review and package signing reduce risk but do not replace a publisher's privacy obligations. See [Publishing & policies](/extensions/publishing-and-policies/).
+
 ## Tracking and ad blocking
 
 Vast supports:

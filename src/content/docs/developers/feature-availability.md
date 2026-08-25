@@ -6,7 +6,7 @@ description: "Distinguish stable, experimental, Labs-gated, developer-only, and 
 Vast deliberately distinguishes stable features from opt-in and experimental surfaces.
 
 :::note[Source verification]
-This reference was checked against Vast Browser `0.1.5`. Feature gates and defaults can change in later releases.
+This reference was checked against the Vast Browser `0.2.5` Beta candidate. Feature gates and defaults can change in later releases.
 :::
 
 | Feature                                     | Status       | How it becomes available                    |

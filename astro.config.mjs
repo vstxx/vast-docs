@@ -78,7 +78,7 @@ export default defineConfig({
         {
           label: 'Extensions',
           collapsed: true,
-          items: ['extensions/extensions', 'extensions/extension-development'],
+          items: ['extensions/extensions', 'extensions/extension-development', 'extensions/publishing-and-policies'],
         },
         {
           label: 'Vast Labs',
