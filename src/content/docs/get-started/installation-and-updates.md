@@ -5,7 +5,7 @@ description: "Supported platforms, release packages, profile locations, updates,
 
 ## Supported release target
 
-Windows x64 is Vast's actively tested packaged release target. The project contains build targets for macOS and Linux, but those platforms are not release-supported at the same level in the current beta.
+Windows x64 is Vast's actively tested packaged release target. The project contains build targets for macOS and Linux, but those platforms are not release-supported at the same level in the current release.
 
 ## Windows packages
 

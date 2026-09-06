@@ -1,9 +1,9 @@
 ---
 title: "Known Limits"
-description: "Current beta limitations for platforms, storage, reader behavior, automation, extensions, and portability."
+description: "Current limitations for platforms, storage, reader behavior, automation, extensions, and portability."
 ---
 
-Vast is beta software and some capabilities are intentionally conservative.
+Some capabilities are intentionally conservative in the current release.
 
 ## Platform support
 
@@ -39,4 +39,4 @@ Cookies and browser session state are included in normal profile handling where 
 
 ## Experimental features
 
-Labs features may change faster than the stable browsing surface. Their UI, storage model, or compatibility behavior can change between beta releases.
+Labs features may change faster than the stable browsing surface. Their UI, storage model, or compatibility behavior can change between releases.

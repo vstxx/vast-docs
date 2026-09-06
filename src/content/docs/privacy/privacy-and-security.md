@@ -34,6 +34,8 @@ Vast supports:
 * custom block rules;
 * domain allowlists.
 
+For filter-list-driven blocking with cosmetic filtering on top of the built-in protections, you can install [Adblocker for Vast](/extensions/adblocker-for-vast/) from the Extensions catalog.
+
 ## Link cleaning
 
 Vast can remove common tracking parameters from links while opening them. Affiliate parameter removal is a separate option because it can change referral attribution.
