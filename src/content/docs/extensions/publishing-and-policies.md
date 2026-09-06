@@ -31,9 +31,9 @@ These declarations appear on the public extension details page. They do not expa
 
 ## Package review
 
-The `.vext` pipeline validates archive size and expansion limits, duplicate and case-colliding entries, Windows-reserved names and characters, traversal and special files, stable identities, referenced files, Manifest V3, permissions, and strict Chrome match patterns.
+The `.vext` pipeline validates archive size and expansion limits, duplicate and case-colliding entries, Windows-reserved names and characters, traversal and special files, stable identities, referenced files (including declared background pages), Manifest V2 or Manifest V3 (a Manifest V2 submission additionally requires a strict local-only `content_security_policy`, and network-provider submissions must carry the full `vast_network` permission set), permissions, and strict Chrome match patterns.
 
-JavaScript receives an AST-based policy review. `eval`, `Function` constructors, string timers, remote module/worker/script loading, and WebAssembly are prohibited. Very large single-line, encoded, minified, or obfuscated sources are marked for manual review. Approval revalidates and signs the exact package before publication.
+JavaScript receives an AST-based policy review. `eval`, `Function` constructors, string timers, remote module/worker/script loading, and WebAssembly are prohibited, including indirect invocation forms such as `(0, eval)(...)`. Very large single-line, encoded, minified, or obfuscated sources are marked for manual review. Approval revalidates and signs the exact package before publication. Reviewers cannot approve their own releases; the only exception is an account holding the administrator role, whose self-approval is labelled separately and recorded with a distinct audit action before the package is re-validated and signed.
 
 ## Report an extension
 

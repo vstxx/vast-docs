@@ -6,7 +6,7 @@ description: "Distinguish stable, experimental, Labs-gated, developer-only, and 
 Vast deliberately distinguishes stable features from opt-in and experimental surfaces.
 
 :::note[Source verification]
-This reference was checked against the published Vast Browser `0.2.5` Public Beta. Feature gates and defaults can change in later releases.
+This reference was checked against the published Vast Browser `0.2.5` Public Beta and the `0.2.7` development line. Feature gates and defaults can change in later releases.
 :::
 
 | Feature                                     | Status       | How it becomes available                    |
@@ -20,6 +20,7 @@ This reference was checked against the published Vast Browser `0.2.5` Public Bet
 | Session Timeline                            | Available    | Always                                      |
 | Advanced import/export                      | Available    | Always                                      |
 | Extensions                                  | Available    | Open Extensions                             |
+| Extension network providers (content blocking) | Available from `0.2.7` | Install a network-provider extension such as Adblocker for Vast |
 | Video & Audio                               | Labs         | Enable Vast Labs, then Video & Audio        |
 | Network Devices                             | Labs         | Enable Vast Labs, then Network Devices      |
 | Automation                                  | Labs         | Enable Vast Labs, then Automation           |

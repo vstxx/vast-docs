@@ -35,6 +35,10 @@ An extension can use:
 * Vast Native integration;
 * a hybrid of both.
 
+## Content blocking
+
+Content-blocking extensions such as [Adblocker for Vast](/extensions/adblocker-for-vast/) use an opt-in network-provider capability that filters requests in normal workspaces after Vast's built-in privacy checks. A provider sees only requests its declared host permissions cover, and private workspaces never load extensions.
+
 ## Permissions
 
 Website permissions and Vast permissions are shown separately. Vast-specific integration permissions require explicit review and can be granted or revoked individually.

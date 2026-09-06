@@ -19,7 +19,7 @@ Keep a small test profile with representative normal tabs. Native tab access exc
 
 ### Chrome-compatible
 
-Uses the supported Chrome extension runtime and standard Chrome permissions, host permissions, content scripts, and extension surfaces. Vast accepts Manifest V2 and Manifest V3 packages, but a successful install does not guarantee that every Chrome API used by the package is supported.
+Uses the supported Chrome extension runtime and standard Chrome permissions, host permissions, content scripts, and extension surfaces. Vast accepts Manifest V2 and Manifest V3 packages. A Manifest V2 package requires an explicit string `content_security_policy` limited to `'self'`/`'none'` sources with `object-src 'none'`. A successful install does not guarantee that every Chrome API used by the package is supported.
 
 ### Vast Native
 
@@ -28,6 +28,22 @@ Uses the permission-scoped Vast Native API. A native extension declares a local 
 ### Hybrid
 
 Combines a Chrome-compatible layer with approved Vast Native capabilities. Keep standard Chrome and website permissions in their normal manifest fields; put only Vast-specific permissions in `vast.permissions`.
+
+## Network provider extensions
+
+A content-blocking extension can intercept web requests through an opt-in network-provider bridge. Declare a top-level `"vast_network": 1` field together with:
+
+* Manifest V2 with a persistent background page;
+* the `webRequest` and `webRequestBlocking` Chrome permissions;
+* host permissions covering both the page URL and the request URLs you want to filter.
+
+A qualifying background page is injected with `vastExtensionCapabilities = { network: 1 }` and answers a fixed `vastWebRequest.handle(json)` entry point with JSON request events. Vast calls providers only for requests from its own HTTP(S) web views in the same session, only after its built-in privacy checks have run, and only when both the page URL and the request URL match the declared host permissions. Private workspaces, internal pages, and non-HTTP(S) traffic are never sent to providers.
+
+Decisions are limited to `cancel`, a bounded `redirectURL` (supported data MIME families or same-origin rewrites), or a response `csp`. Provider callbacks have a 500 ms deadline and requests fail open — a slow or crashed provider never breaks page loading. Vast evaluates no provider-supplied code; the bridge exchanges JSON only.
+
+:::note[Version]
+Network-provider support ships with Vast `0.2.7`. Older builds show a compatibility error instead of installing the extension. [Adblocker for Vast](/extensions/adblocker-for-vast/) is the reference implementation.
+:::
 
 ## Start a native extension
 
