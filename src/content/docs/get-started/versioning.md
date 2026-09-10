@@ -1,64 +1,71 @@
 ---
 title: "Versioning"
-description: "How Vast Browser version numbers work across regular releases and the Microsoft Store."
+description: "How Vast Browser version numbers work across regular releases and Microsoft Store builds."
 ---
 
-Vast Browser uses a three-part version number:
+Vast uses a three-part version number for normal releases:
 
-`X.Y.Z`
+```
+X.Y.Z
+```
 
-Each number represents the scale of the changes included in a release.
+Each part indicates the scale of the release.
 
-## First number — major release
+## Major releases
 
-The first number represents a major Vast release.
+The first number identifies a major Vast release.
 
-It changes only when an update is large enough to represent a major new release of the browser — for example, a significant overall update with major changes, new functionality, or substantial improvements across Vast.
-
-Example:
-
-`0.2.7 → 1.0.0`
-
-A change to the first number represents the largest type of Vast update.
-
-## Second number — substantial update
-
-The second number represents a significant update that is smaller than a full major release.
-
-These releases can introduce multiple new features, meaningful changes to existing functionality, larger UI or UX improvements, and other substantial improvements.
+It changes when an update represents a major new release of the browser, with substantial changes across the product, major new functionality, or a significant overall revision.
 
 Example:
 
-`0.2.7 → 0.3.0`
+```
+0.2.7 -> 1.0.0
+```
 
-## Third number — small update
+A change to the first number represents the largest release level used by Vast.
 
-The third number represents smaller releases.
+## Substantial updates
 
-These updates can include a few new features, smaller improvements, bug fixes, hotfixes, stability fixes, or other minor changes.
+The second number identifies a significant update within the current major release.
+
+These releases can include multiple new features, larger changes to existing functionality, UI or UX changes, and other substantial improvements.
 
 Example:
 
-`0.2.7 → 0.2.8`
+```
+0.2.7 -> 0.3.0
+```
+
+## Small updates
+
+The third number identifies a smaller update.
+
+These releases can include a small number of new features, minor changes, bug fixes, hotfixes, stability improvements, and similar maintenance work.
+
+Example:
+
+```
+0.2.7 -> 0.2.8
+```
 
 ## Microsoft Store versions
 
-Microsoft Store builds use a four-part version number:
+Microsoft Store packages use a four-part version number:
 
-`X.Y.Z.W`
+```
+X.Y.Z.W
+```
 
-The first three numbers have the same meaning as the normal Vast version.
+The first three numbers correspond to the normal Vast version and keep the same meaning described above.
 
-The fourth number exists only for Microsoft Store packaging and release purposes. It is not part of the meaningful Vast Browser version and should generally be ignored.
+The fourth number is used only for Microsoft Store packaging and submission requirements. It is not considered part of the meaningful Vast Browser release version.
 
-For example:
+For example, both of these packages belong to Vast Browser `0.2.7`:
 
-`0.2.7.0`
+```
+0.2.7.0
+0.2.7.4
+```
 
-and
-
-`0.2.7.4`
-
-both belong to Vast Browser version `0.2.7`.
-
-When referring to a Vast release publicly, use the normal three-part version whenever possible.
+When referring to a Vast release in documentation, release notes, or other public material, use the three-part version unless the exact Microsoft Store package version is specifically relevant.
