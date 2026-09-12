@@ -1,62 +1,70 @@
 ---
 title: "Installation & Updates"
-description: "Supported platforms, release packages, profile locations, updates, and release authenticity."
+description: "Install Vast 0.3.0 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
 ---
 
-## Supported release target
+## Current release
 
-Windows x64 is Vast's actively tested packaged release target. The project contains build targets for macOS and Linux, but those platforms are not release-supported at the same level in the current release.
+Vast **0.3.0** is the current direct Windows x64 release, published on **12 September 2026**. The previous direct release is 0.2.7. Read the [complete changelog](/releases/0-3-0/).
 
-## Windows packages
+| Package | Use it for | Updates |
+| --- | --- | --- |
+| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.3.0/Vast-Setup-0.3.0.exe) | A normal installed copy of Vast | Built-in background updates, or the direct standalone updater |
+| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.3.0/Vast-0.3.0-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
+| [Microsoft Store](https://apps.microsoft.com/detail/9MTWRJCKMDTX) | A Store-managed installation | Microsoft Store only |
 
-Vast can be packaged as:
+The Store has a separate review and rollout. Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
 
-* a normal Windows installer;
-* a portable Windows build.
+Windows x64 is the tested release target. macOS and Linux build targets do not imply equivalent release support.
 
-The installer allows the application installation directory to be changed. Application files and user profile data are separate: changing where Vast is installed does not automatically move your browser profile.
-
-## Current public release
-
-Vast `0.2.7` was published for Windows x64 on 4 September 2026 and is also available from the Microsoft Store.
-
-* [Download the installer](https://github.com/vstxx/vast-public/releases/download/v0.2.7/Vast-Setup-0.2.7.exe)
-* [Download the portable build](https://github.com/vstxx/vast-public/releases/download/v0.2.7/Vast-0.2.7-Portable.exe)
-* [Install from the Microsoft Store](https://apps.microsoft.com/detail/9MTWRJCKMDTX)
-* [Open the complete release and verification files](https://github.com/vstxx/vast-public/releases/tag/v0.2.7)
-
-:::caution[Unsigned direct download]
-The direct installer and portable build are intentionally not Authenticode-signed. Windows displays **Unknown publisher**, and SmartScreen may warn. Download them only from the Vast website or the `vstxx/vast-public` release, then compare the hash with the published `SHA256SUMS.txt` or `SHA512SUMS.txt` before running. The Microsoft Store package is signed by Microsoft after Store certification.
+:::caution[Unsigned direct binaries]
+The installer, Portable, and standalone updater are intentionally not Authenticode-signed. Windows displays **Unknown publisher**, and SmartScreen may warn. Download only from Vast's official site or its public GitHub release and compare published checksums before running. This is separate from Microsoft Store signing and certification.
 :::
 
-Store installs receive updates through Microsoft Store; direct installs use Vast's own updater. Both channels share the same `%APPDATA%\Vast` profile, so settings, sessions, extensions, and the password vault survive a channel switch.
+## Install and choose defaults
 
-## User data location
+Run the installer and choose the installation directory. Application files and your profile are separate; changing the installation directory does not move the profile.
 
-On a standard installed Windows profile, Vast normally uses Electron's application-data location, typically:
+Use **Settings → Search → Set browser as default** to open Windows default-app selection. The installer also makes Vast available in **Open with** for PDFs. It does not silently replace your chosen PDF default.
 
-```
-%APPDATA%\Vast
-```
+## Background updates for installed direct copies
 
-If you choose a custom data directory from Settings, Vast uses the selected profile root after validation and restart.
+Eligible packaged direct installations check for updates shortly after startup. When an update is available, Vast downloads it in the background and verifies it before preparing installation for the next launch.
 
-## Updating Vast
+Close Vast normally and reopen it to apply a prepared update. An external helper waits for the old browser process before installing. Windows may require an elevation prompt for protected installation locations. If the handoff cannot start, Vast keeps the current version available; failed attempts are bounded rather than retried indefinitely.
 
-Vast's update path treats application runtime files and browser-profile data separately. Before an update restart, persistent browser sessions are asked to flush relevant local browser state.
+The installation and profile are matched when preparing an update, including custom installation and data paths. Portable, renamed executables, unpacked copies, development builds, and Store installations do not use this normal installed-browser automatic path. Read the update status in Settings when automatic updates are unavailable.
 
-Normal update handling is not intended to delete your profile. Important local data is protected by backup/recovery behavior around update operations.
+## Standalone updater
 
-:::caution
-An application update is not the same operation as **Clear cookies/site data on exit**. An updater restart should not be interpreted as a user-requested privacy cleanup.
-:::
+The [Vast 0.3.0 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.3.0/VastUpdater-0.3.0.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
 
-## Release authenticity
+Close Vast and use the updater for an existing direct installation. If installation detection fails, review the log and the updater's explicit installation-path option instead of pointing it at a profile directory.
 
-Use official Vast release artifacts. Do not assume that a locally built executable, fork, repackaged installer, or third-party mirror has the same release verification, dependency set, or security posture as the published Vast build.
+**Do not use this executable for Microsoft Store/MSIX or Portable.** A Store package must be updated by Microsoft Store. The standalone executable does not provide a Store migration or a dedicated MSIX-detection guarantee.
 
-The public release includes checksums, exact-source metadata, updater metadata, dependency provenance, and FFmpeg corresponding source. The absence of an Authenticode signature on the direct `0.2.7` download is intentional and is recorded in the release metadata; it must not be mistaken for a signed release.
+A 404 for the version's public manifest means that release URL is unavailable. A private release candidate is not a public update feed. See [Troubleshooting](/developers/troubleshooting/).
 
-## Portable builds
+## Portable updates
 
-Portable application packaging does not automatically mean every piece of browser state is portable between Windows accounts or machines. Credentials and website sessions may rely on OS-backed encryption; see **Data, Backup & Migration**.
+Close the portable browser, back up important data, and replace its executable with the new official Portable build. Keep its existing portable data directory. Do not run the installed-browser updater against the temporary extracted runtime of a portable executable.
+
+Portable data can still contain OS-encrypted credentials and cookies that will not decrypt under another Windows account or on another computer.
+
+## Profile data and channel changes
+
+Installed direct and Store builds normally use %APPDATA%\Vast; a custom data root selected in Settings takes precedence after restart. Portable builds use their separate portable location. Use **Settings → Data → Open data folder** to identify the profile actually in use.
+
+Normal updates preserve profile data. Back up important data before a channel switch, close every Vast instance, and confirm the active profile after opening the other installation. Sharing a default path is not a guarantee that encrypted website sessions survive every migration or downgrade. See [Data, Backup & Migration](/privacy/data-backup-and-migration/).
+
+## Verify a download
+
+The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.3.0) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
+
+For example, compute a local installer hash in PowerShell:
+
+~~~powershell
+Get-FileHash .\Vast-Setup-0.3.0.exe -Algorithm SHA256
+~~~
+
+Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.3.0/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.3.0/Vast-0.3.0-update.zip) is an updater payload, not an MSIX package.

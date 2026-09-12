@@ -36,7 +36,6 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 | Opening sound                      | Startup audio volume                         |
 | Bookmarks bar                      | Bar visibility                               |
 | Show bookmarks bar only on New Tab | Restrict bar to New Tab                      |
-| Cat Addon                          | Optional local visual add-on when available  |
 
 ## Advanced
 
@@ -81,7 +80,9 @@ Developer Mode, tab DevTools, active-webview reload, application-chrome reload, 
 
 ## Privacy
 
-Tracker blocking, ad blocker and mode, EasyList, EasyPrivacy, Peter Lowe's list, malware list, Polish annoyance filters, list auto-update, custom block categories, custom network rules, ad-block allowlist, tracking-parameter cleaning, optional affiliate-parameter removal, third-party cookie blocking, cookie/login exceptions, fingerprinting protection and exceptions, WebRTC policy and exceptions, leak-test shortcut, filter refresh, fake history, clear-on-exit, temporary-workspace default, history disable, Recently Closed disable, page-text capture disable, favicon disable, and site-data clearing.
+Built-in common-tracker blocking, tracking-parameter cleaning, optional affiliate-parameter removal, third-party cookie blocking, cookie/login exceptions, fingerprinting protection and exceptions, WebRTC policy and exceptions, leak-test shortcut, fake history, clear-on-exit, temporary-workspace default, history disable, Recently Closed disable, page-text capture disable, favicon disable, and site-data clearing.
+
+The native ad-block engine and its filter-list controls were removed in 0.3.0. Configure filter lists, custom ad-block rules, and ad-block allowlists in the optional [Adblocker for Vast](/extensions/adblocker-for-vast/) extension. The privacy page groups normal controls in two columns and longer exception inputs below; narrower windows use the available width.
 
 ## Spoofing
 

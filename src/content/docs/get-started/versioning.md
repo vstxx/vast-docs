@@ -57,15 +57,18 @@ Microsoft Store packages use a four-part version number:
 X.Y.Z.W
 ```
 
-The first three numbers correspond to the normal Vast version and keep the same meaning described above.
+The Store identity version is configured separately from the three-part browser version. It is not derived by adding components or incrementing the product version.
 
-The fourth number is used only for Microsoft Store packaging and submission requirements. It is not considered part of the meaningful Vast Browser release version.
+For Store submissions, Vast uses a four-part package version with a final component of `0`. Each new package version must exceed the highest version already consumed by Partner Center, including previously uploaded packages. A Store package version does not describe the scale of browser changes.
 
-For example, both of these packages belong to Vast Browser `0.2.7`:
+For the 0.3.0 release preparation:
 
 ```
-0.2.7.0
-0.2.7.4
+Browser product version: 0.3.0
+Previous browser release: 0.2.7
+Prepared Store package version: 1.2.9.0
 ```
 
 When referring to a Vast release in documentation, release notes, or other public material, use the three-part version unless the exact Microsoft Store package version is specifically relevant.
+
+The package number may need to increase before submission if Partner Center has already used it. Store review and rollout are separate from the direct GitHub release; a published browser version does not imply that its Store update is available yet. See [Installation & Updates](/get-started/installation-and-updates/).

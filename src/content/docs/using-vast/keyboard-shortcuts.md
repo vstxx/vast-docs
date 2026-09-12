@@ -21,7 +21,6 @@ Vast shortcuts are editable in **Settings → Shortcuts**. The defaults are desi
 | Zoom out          | `Ctrl/Cmd+Minus`   |
 | Reset zoom        | `Ctrl/Cmd+0`       |
 | Print             | `Ctrl/Cmd+P`       |
-| Toggle ad blocker | `Ctrl/Cmd+Shift+A` |
 
 ## Editing shortcuts
 
@@ -32,3 +31,5 @@ If a custom binding becomes inconvenient, **Reset shortcuts** restores the defau
 :::note
 Operating-system shortcuts, accessibility software, keyboard-layout differences, and other applications can claim combinations before Vast receives them. If a custom shortcut does not fire consistently, test a less contested combination.
 :::
+
+The old native ad-blocker shortcut is no longer a browser action in 0.3.0. Manage Adblocker for Vast through its extension controls.

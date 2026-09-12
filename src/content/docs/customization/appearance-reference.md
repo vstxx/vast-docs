@@ -40,3 +40,11 @@ Vast's appearance controls are intentionally granular. They let you tune the bro
 Visual customization should never be required to access a browser action. Reduced-motion and reduced-transparency preferences take priority over decorative effects where supported.
 
 Website force-dark behavior can occasionally produce poor contrast or broken site styling. Disable it for compatibility when needed.
+
+## Global corner radius in 0.3.0
+
+**Corner radius** ranges from **6 to 36 px** (default **26 px**). It sets one base value with proportional rounding for small controls, cards, panels, and dialogs. Tabs, menus, Settings, internal pages, notifications, PDF controls, and autofill surfaces follow that value; not every element uses the same literal pixel radius.
+
+The setting is retained for startup and window creation. Real circles, status dots, decorative radial shapes, print layout, and intentional square docked edges keep their structural geometry. It does not round arbitrary website content.
+
+Settings use lighter glow and shadow treatment in 0.3.0, especially in Dim. Notes and side surfaces follow the selected theme. Radius changes update the browser's styling without reloading website tabs.

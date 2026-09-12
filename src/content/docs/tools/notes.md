@@ -33,3 +33,7 @@ The side panel provides a compact note view for the active workspace or page. Us
 Export an individual note as a Markdown (`.md`) file. Notes are also included in Vast's normal local backup and migration workflows.
 
 Vast does not send note text to a remote service by default.
+
+## Page-linked notes and quotes
+
+Use a page's context menu to create a linked note or save selected text as a quote. Confirm the linked page and workspace when organizing it in Notes. The side panel and full-page editor follow the selected theme and global corner radius, including Dim mode.

@@ -6,7 +6,7 @@ description: "Distinguish stable, experimental, Labs-gated, developer-only, and 
 Vast deliberately distinguishes stable features from opt-in and experimental surfaces.
 
 :::note[Source verification]
-This reference was checked against the published Vast Browser `0.2.5` and `0.2.7` releases. Feature gates and defaults can change in later releases.
+This reference was checked against the published Vast Browser `0.3.0` source and release. Feature gates and defaults can change in later releases.
 :::
 
 | Feature                                     | Status       | How it becomes available                    |
@@ -30,6 +30,8 @@ This reference was checked against the published Vast Browser `0.2.5` and `0.2.7
 | Purist layout                               | Experimental | Enable Experimental features                |
 | Deeper developer actions                    | Developer    | Enable Developer Mode                       |
 | Experimental themes                         | Coming soon  | Not active in the current build             |
+
+Native ad-block filter lists and Cat Addon are not available in 0.3.0. Content blocking beyond the built-in common-tracker policy is provided by an installed extension. Store and Portable update behavior differs from installed direct builds; see [Installation & Updates](/get-started/installation-and-updates/).
 
 ## What a Labs switch means
 

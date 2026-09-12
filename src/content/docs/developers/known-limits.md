@@ -40,3 +40,11 @@ Cookies and browser session state are included in normal profile handling where 
 ## Experimental features
 
 Labs features may change faster than the stable browsing surface. Their UI, storage model, or compatibility behavior can change between releases.
+
+## Distribution and update limits in 0.3.0
+
+The direct Windows release is intentionally unsigned. Store certification and availability are separate from GitHub publication. The direct standalone updater does not update Microsoft Store/MSIX or Portable installations.
+
+Extensions, including Adblocker for Vast, do not run in private or temporary workspaces. A private download's saved file can remain on disk even though its history is not persisted. Retrying a download cannot restore expired authentication or a destroyed temporary session.
+
+Smart Unload targets are best-effort. Discarded tabs reload when opened; do not rely on them to preserve unsaved website state.

@@ -32,7 +32,7 @@ Cards can also use a compact layout.
 
 Quick Links are locally stored shortcuts. You can add, edit, remove, recolor, and reorder them.
 
-A clean profile begins with a small neutral set rather than a large promotional grid.
+A clean 0.3.0 profile has no preloaded Quick Links. Existing links from an older profile are retained.
 
 ## Workspace context
 

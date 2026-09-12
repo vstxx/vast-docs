@@ -73,3 +73,9 @@ Focus Mode reduces surrounding interface distraction while keeping the active pa
 ## Reader behavior
 
 The current reader/focus feature is a reversible reading-oriented presentation layer. It is **not** a full semantic article extraction engine, so complex pages may retain more of their original structure than dedicated article-extraction readers.
+
+## Right-click page actions
+
+The browser context menu can copy a selection or page URL, navigate back, reload, find text, toggle a bookmark, save to Reading List, create a page-linked note, save a quote, print, mute, or inspect supported content. Available actions depend on the clicked content and tab state; a note or quote uses that page's context.
+
+Normal website, internal-page, and PDF actions are not interchangeable. Use the PDF viewer's own controls for document-specific operations. Developer inspection depends on the relevant development settings.

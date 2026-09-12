@@ -54,4 +54,4 @@ Restoring a snapshot replaces the target workspace tab set and creates a safety 
 
 ## [PDF viewer](/tools/pdf-viewer/)
 
-Vast includes a local PDF surface for public web documents, with search, page navigation, zoom, rotation, layout controls, document information, and permission-aware copy, print, and download actions.
+Vast includes a local PDF surface for local files and supported web documents, including authenticated documents in their originating workspace, with search, page navigation, zoom, rotation, layout controls, document information, and permission-aware copy, print, and download actions.

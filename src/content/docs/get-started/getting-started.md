@@ -3,11 +3,11 @@ title: "Getting Started"
 description: "Install Vast, understand a clean profile, and learn the essential navigation and shortcuts."
 ---
 
-Vast opens with one workspace and one New Tab on a clean profile. The default first-launch experience is intentionally sparse: the sidebar and side panel are closed, startup audio is muted, and New Tab focuses on search with a small set of neutral quick links.
+Vast opens with one workspace and one New Tab on a clean profile. The default first-launch experience is intentionally sparse: the sidebar and side panel are closed, startup audio is muted, and New Tab focuses on search with no preloaded quick links.
 
 ## Install
 
-Use an official Vast release artifact. On Windows, Vast is distributed as an installer, a portable build, and a Microsoft Store package. The current release is `0.2.7`. The direct installer and portable build are intentionally unsigned, so Windows displays **Unknown publisher** and SmartScreen may warn — check the published SHA-256 or SHA-512 value before running them. See [Installation & Updates](/get-started/installation-and-updates/).
+Use an official Vast release artifact. On Windows, Vast is distributed as an installer, a portable build, and a Microsoft Store package. The current direct release is `0.3.0`; Microsoft Store availability follows a separate rollout. The direct installer and portable build are intentionally unsigned, so Windows displays **Unknown publisher** and SmartScreen may warn — check the published SHA-256 or SHA-512 value before running them. See [Installation & Updates](/get-started/installation-and-updates/).
 
 Do not treat a locally built development package as an official Vast release.
 
@@ -19,7 +19,8 @@ A new profile starts with:
 * one `vast://newtab` tab;
 * no seeded bookmarks, folders, notes, macros, tab groups, todos, or session timeline entries;
 * search-focused New Tab behavior;
-* tracker blocking and ad blocking enabled;
+* built-in common-tracker blocking and tracking-parameter cleaning enabled;
+* optional filter-list ad blocking available by installing Adblocker for Vast;
 * third-party cookie blocking enabled;
 * Vast Labs disabled;
 * password management, network discovery, automation, diagnostics, and spoofing hidden until explicitly enabled.

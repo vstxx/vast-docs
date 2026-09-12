@@ -5,7 +5,9 @@ description: "Optional first-party content blocker installed from the Vast Exten
 
 Adblocker for Vast is an optional content-blocking extension. It is not built into the browser: it installs from the Vast Extensions catalog through the same review, signing, and update flow as any other extension, and removing it removes its engine, lists, and data completely.
 
-Install it from **Extensions** in Vast (Explore view), or browse the [Extensions catalog](https://extensions.vastbrowser.com/explore?category=privacy) on the web. It requires a Vast build with extension network-provider support — `0.2.7`, the current release, or newer. Older builds show an explicit compatibility error instead of installing it.
+Install it from **Extensions** in Vast (Explore view), or browse the [Extensions catalog](https://extensions.vastbrowser.com/explore?category=privacy) on the web. It requires a Vast build with extension network-provider support — `0.2.7` or newer, including the current `0.3.0` release. Older builds show an explicit compatibility error instead of installing it.
+
+In 0.3.0 the former native ad-block engine and its Settings controls are removed. Install this extension if you want filter-list and cosmetic blocking. It is not installed automatically by a browser upgrade, and old native lists or allowlists do not automatically migrate into its configuration.
 
 ## What it does
 

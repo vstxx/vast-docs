@@ -50,3 +50,9 @@ CSV import is manual. CSV export is plaintext by nature; protect exported files 
 ## Encryption
 
 Credential secrets are protected using operating-system-backed encryption where available. Portability across another machine or OS account is therefore not guaranteed.
+
+## Current save behavior and appearance
+
+Save and Update prompts use observed sign-in outcomes rather than treating every form submission as success. Failed or ambiguous sign-ins may not produce a prompt. One-time codes and payment security codes are not account passwords to capture.
+
+Routine save decisions are separate from unlocking sensitive vault actions such as revealing, copying, or exporting passwords. Private and ephemeral workspaces do not use normal password capture and autofill. Autofill and save surfaces follow the browser theme and global corner radius in 0.3.0.

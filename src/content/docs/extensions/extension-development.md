@@ -218,7 +218,7 @@ Use `vast.tabs.read` for observation and `vast.tabs.write` only when the extensi
 
 ### Theme tokens
 
-`theme.apply()` accepts a validated subset of appearance tokens, including accent and tint colors, corner radius, glass and blur intensity, borders, shadows, gradients, panel and chrome opacity, and saturation. Apply a coherent token set and always provide a way to call `theme.clear()`.
+`theme.apply()` accepts a validated subset of appearance tokens, including accent and tint colors, corner radius, glass and blur intensity, borders, shadows, gradients, panel and chrome opacity, and saturation. Apply a coherent token set and always provide a way to call `theme.clear()`. In 0.3.0 the user's global Corner radius preference takes precedence over an extension-provided radius in the browser shell.
 
 Do not try to inject CSS into Vast chrome. The theme API is the supported boundary and keeps themes compatible with light, dark, and future browser UI changes.
 

@@ -53,3 +53,9 @@ The bookmarks bar can be always visible, hidden, or shown only on New Tab.
 ## Reduced effects
 
 Vast respects reduced-motion and reduced-transparency behavior. Visual effects should degrade without removing the underlying controls.
+
+## Changes in 0.3.0
+
+Purist's address bar and embedded navigation buttons now respond correctly to pointer input. Use Ctrl/Cmd+L to focus the omnibar from the keyboard. Purist remains experimental.
+
+Corner radius now controls rounded Vast-owned surfaces consistently, including menus and autofill; Settings and Notes use calmer effects and consistent Dim backgrounds. See [Appearance Reference](/customization/appearance-reference/).

@@ -5,23 +5,13 @@ description: "A practical reference for blocking, cookie, fingerprinting, WebRTC
 
 This page explains the purpose and trade-offs of every major user-facing privacy control.
 
-## Blocking
+## Blocking in 0.3.0
 
-| Control                  | Purpose                                      | Compatibility note                                |
-| ------------------------ | -------------------------------------------- | ------------------------------------------------- |
-| Block common trackers    | Stops recognized tracking requests           | Some analytics-dependent site functions can break |
-| Ad blocker               | Blocks advertising requests/content patterns | Publisher sites may detect blockers               |
-| Standard mode            | Strong default balance                       | Recommended baseline                              |
-| Strict mode              | More aggressive blocking                     | Higher breakage risk                              |
-| Custom mode              | Uses your selected categories/rules          | Quality depends on configuration                  |
-| EasyList                 | General ad rules                             | Broad web coverage                                |
-| EasyPrivacy              | Privacy/tracker rules                        | Can affect embedded services                      |
-| Peter Lowe's list        | Additional ad/tracker host rules             | Complements larger lists                          |
-| Malware list             | Blocks known malicious destinations/patterns | Not a substitute for endpoint security            |
-| Polish Annoyance Filters | Optional Polish nuisance filtering           | Off by default                                    |
-| Auto-update lists        | Refreshes filter data                        | Recommended unless troubleshooting                |
-| Custom rules             | User-authored blocking/exceptions            | Incorrect syntax can overblock                    |
-| Allowlist                | Bypasses blocking for selected domains       | Use narrowly                                      |
+**Block common trackers** remains a built-in browser setting. Test compatibility when a website depends on a blocked request.
+
+The old native Ad blocker, Standard/Strict/Custom ad-block modes, list switches, custom filter rules, refresh action, and ad-block allowlist are no longer browser settings. Install [Adblocker for Vast](/extensions/adblocker-for-vast/) for filter-list and cosmetic blocking and manage those options in the extension.
+
+The extension does not run in private or temporary workspaces. Browser cookie, fingerprinting, WebRTC, and tracking-parameter controls remain available independently.
 
 ## URL cleaning
 

@@ -46,3 +46,19 @@ No. It is designed for local/private network discovery, not public-IP scanning.
 ## Why is a feature missing?
 
 Check whether Vast Labs, the individual feature switch, Experimental features, or Developer Mode is required. Some entries are deliberately hidden until their parent capability is enabled.
+
+## What changed in 0.3.0?
+
+See the [complete release notes](/releases/0-3-0/) for downloads, global radius, background updates, menus, Settings, and Windows integration.
+
+## Where did the native Adblocker settings go?
+
+They were removed in 0.3.0. Install [Adblocker for Vast](/extensions/adblocker-for-vast/) for filter-list and cosmetic blocking. Common-tracker protection and the other browser privacy controls remain built in.
+
+## Can the standalone updater update the Microsoft Store edition?
+
+No. Store installations update through Microsoft Store. The standalone updater is for an existing direct installation; Portable uses a replacement Portable build.
+
+## Does global Corner radius change websites?
+
+No. It changes Vast-owned controls and surfaces, including autofill, while preserving structural circles and docked edges. Website content keeps its own styling.

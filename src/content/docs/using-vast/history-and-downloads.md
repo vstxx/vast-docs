@@ -45,3 +45,13 @@ Security settings can warn before or around potentially dangerous downloads. A w
 ### Download metadata vs. downloaded files
 
 The Downloads list is profile metadata. The actual downloaded file lives at the filesystem location you selected. Clearing Vast's history or metadata does not imply deletion of the downloaded file itself.
+
+## Workspace-aware downloads in 0.3.0
+
+Downloads are tracked for shared, isolated, and temporary sessions, including workspaces initialized by enabled extensions during startup. Multiple downloads have separate progress records. Reloading the Vast interface recovers active downloads from the browser process instead of losing the progress display.
+
+Persistent-session history records download start and completion. A later security-scan result updates that record separately; completed does not itself mean a file passed a security scan. Browser restart preserves history, but does not guarantee that every interrupted server transfer can resume.
+
+**Retry** uses the originating workspace session. For authenticated downloads, keep that workspace signed in. A destroyed temporary session, expired URL, revoked login, or removed workspace can require reopening the original page and starting a new download.
+
+Temporary-session records are not saved in durable download history. A file explicitly saved to disk remains there even after the temporary workspace closes.

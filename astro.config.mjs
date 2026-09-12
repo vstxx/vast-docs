@@ -40,7 +40,7 @@ export default defineConfig({
         {
           label: 'Get Started',
           collapsed: true,
-          items: ['get-started/getting-started', 'get-started/installation-and-updates', 'get-started/versioning'],
+          items: ['get-started/getting-started', 'get-started/installation-and-updates', 'get-started/versioning', 'releases/0-3-0'],
         },
         {
           label: 'Using Vast',
@@ -88,7 +88,7 @@ export default defineConfig({
         {
           label: 'Customization',
           collapsed: true,
-          items: ['customization/appearance-reference', 'customization/settings-reference', 'customization/cat-addon'],
+          items: ['customization/appearance-reference', 'customization/settings-reference', { label: 'Cat Addon (removed)', slug: 'customization/cat-addon' }],
         },
         {
           label: 'Developers',

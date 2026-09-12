@@ -28,3 +28,9 @@ Temporary/ephemeral browsing contexts are intentionally treated differently from
 ## New Tab behavior
 
 New Tab can be Search, Vast dashboard, or Blank. Dashboard cards are separately configurable so changing your startup behavior does not require changing your New Tab layout.
+
+## Startup and updates
+
+Inactive restored tabs can stay discarded until you select them. This keeps a large saved workspace from loading all pages immediately.
+
+An eligible direct installation can apply a previously downloaded update before opening its restored browser session. A normal update preserves profile data and is separate from a user-requested clear-on-exit operation. Store and Portable follow different update paths; see [Installation & Updates](/get-started/installation-and-updates/).
