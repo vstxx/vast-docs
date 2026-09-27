@@ -32,4 +32,4 @@ If a custom binding becomes inconvenient, **Reset shortcuts** restores the defau
 Operating-system shortcuts, accessibility software, keyboard-layout differences, and other applications can claim combinations before Vast receives them. If a custom shortcut does not fire consistently, test a less contested combination.
 :::
 
-The old native ad-blocker shortcut is no longer a browser action. Manage Adblocker for Vast through its extension controls.
+The old native ad-blocker shortcut is no longer a browser action in 0.3.0. Manage Adblocker for Vast through its extension controls.

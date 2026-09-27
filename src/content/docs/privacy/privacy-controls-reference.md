@@ -5,7 +5,7 @@ description: "A practical reference for blocking, cookie, fingerprinting, WebRTC
 
 This page explains the purpose and trade-offs of every major user-facing privacy control.
 
-## Blocking
+## Blocking in 0.3.0
 
 **Block common trackers** remains a built-in browser setting. Test compatibility when a website depends on a blocked request.
 

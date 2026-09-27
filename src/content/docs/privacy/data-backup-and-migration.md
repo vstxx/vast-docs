@@ -96,7 +96,7 @@ Cookies and browser session files can be backed up, but a website's login sessio
 
 Updating the Vast application is separate from moving/clearing your profile. Normal updater behavior is designed to preserve profile data rather than replace it with application files.
 
-## Download history and updates
+## Download history and updates in 0.3.0
 
 Persistent download records are saved separately from high-frequency progress updates and survive normal restart. Temporary-session download records are not part of durable history. Neither a profile backup nor a download record necessarily contains the downloaded file itself; back up that file from its save location if needed.
 

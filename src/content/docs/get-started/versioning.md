@@ -34,7 +34,7 @@ These releases can include multiple new features, larger changes to existing fun
 Example:
 
 ```
-0.2.7 -> 0.4.0
+0.2.7 -> 0.3.0
 ```
 
 ## Small updates
@@ -61,10 +61,11 @@ The Store identity version is configured separately from the three-part browser 
 
 For Store submissions, Vast uses a four-part package version with a final component of `0`. Each new package version must exceed the highest version already consumed by Partner Center, including previously uploaded packages. A Store package version does not describe the scale of browser changes.
 
-For the current direct release and separate Store package preparation:
+For the 0.3.0 release preparation:
 
 ```
-Browser product version: 0.4.0
+Browser product version: 0.3.0
+Previous browser release: 0.2.7
 Prepared Store package version: 1.2.9.0
 ```
 

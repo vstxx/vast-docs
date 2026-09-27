@@ -21,7 +21,6 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 | Sidebar mode                       | Auto, docked, overlay                        |
 | Sidebar width                      | Side-panel width                             |
 | Sidebar labels                     | Show/hide labels                             |
-| Clean toolbar icons                | Remove outlined toolbar button backgrounds and slightly enlarge their icons |
 | Corner radius                      | Interface roundness                          |
 | Glassiness                         | Translucency effect strength                 |
 | Blur                               | Backdrop blur strength                       |
@@ -83,7 +82,7 @@ Developer Mode, tab DevTools, active-webview reload, application-chrome reload, 
 
 Built-in common-tracker blocking, tracking-parameter cleaning, optional affiliate-parameter removal, third-party cookie blocking, cookie/login exceptions, fingerprinting protection and exceptions, WebRTC policy and exceptions, leak-test shortcut, fake history, clear-on-exit, temporary-workspace default, history disable, Recently Closed disable, page-text capture disable, favicon disable, and site-data clearing.
 
-The native ad-block engine and its filter-list controls are no longer part of Vast. Configure filter lists, custom ad-block rules, and ad-block allowlists in the optional [Adblocker for Vast](/extensions/adblocker-for-vast/) extension. The privacy page groups normal controls in two columns and longer exception inputs below; narrower windows use the available width.
+The native ad-block engine and its filter-list controls were removed in 0.3.0. Configure filter lists, custom ad-block rules, and ad-block allowlists in the optional [Adblocker for Vast](/extensions/adblocker-for-vast/) extension. The privacy page groups normal controls in two columns and longer exception inputs below; narrower windows use the available width.
 
 ## Spoofing
 

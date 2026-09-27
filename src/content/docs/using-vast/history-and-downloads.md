@@ -46,7 +46,7 @@ Security settings can warn before or around potentially dangerous downloads. A w
 
 The Downloads list is profile metadata. The actual downloaded file lives at the filesystem location you selected. Clearing Vast's history or metadata does not imply deletion of the downloaded file itself.
 
-## Workspace-aware downloads
+## Workspace-aware downloads in 0.3.0
 
 Downloads are tracked for shared, isolated, and temporary sessions, including workspaces initialized by enabled extensions during startup. Multiple downloads have separate progress records. Reloading the Vast interface recovers active downloads from the browser process instead of losing the progress display.
 

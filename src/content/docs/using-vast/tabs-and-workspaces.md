@@ -74,7 +74,7 @@ Vast can require confirmation before workspace deletion. This is recommended bec
 
 ## More Tabs and restored sessions
 
-When tabs no longer fit, open **More Tabs** to search by title or address, inspect tab state, switch to a result, or close an individual tab. Its menu is placed above page content without colliding with neighboring browser controls.
+When tabs no longer fit, open **More Tabs** to search by title or address, inspect tab state, switch to a result, or close an individual tab. In 0.3.0 its menu is placed above page content without colliding with neighboring browser controls.
 
 Inactive restored tabs can remain discarded until visited, avoiding loading every saved page at startup. A discarded page reloads when activated; its unsaved in-page state may not survive. Keep important work saved and configure pinned-tab protection where appropriate.
 

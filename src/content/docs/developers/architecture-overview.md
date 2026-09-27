@@ -55,7 +55,7 @@ Some Labs features have their own local runtime or OS capability. They remain se
 
 This diagram is deliberately conceptual. Detailed privileged-channel names, signing logic, service topology, key material, anti-abuse controls, and private deployment mechanics are outside the scope of public documentation.
 
-## Performance and persistence
+## Performance and persistence in 0.3.0
 
 The renderer loads heavier browser surfaces on demand. Inactive restored tabs can remain discarded, and tab/sidebar rendering avoids unnecessary work. Appearance uses shared CSS variables and proportional radius tokens rather than reloading web content when a radius changes.
 

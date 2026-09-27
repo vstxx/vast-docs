@@ -33,6 +33,6 @@ Focus Mode reduces browser-chrome distraction for reading or concentrated work. 
 
 Automation can toggle Focus Mode as one of its constrained local actions.
 
-## Downloads and Dim mode
+## Downloads and Dim mode in 0.3.0
 
 The Downloads panel recovers active progress after an interface reload and retains persistent-session history. Notes and adjacent surfaces follow Dim mode consistently. These panels share the browser's global corner radius; see [History & Downloads](/using-vast/history-and-downloads/) and [Appearance Reference](/customization/appearance-reference/).

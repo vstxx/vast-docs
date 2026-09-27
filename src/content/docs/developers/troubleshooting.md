@@ -52,7 +52,7 @@ Include the Vast version, platform, clear reproduction steps, expected behavior,
 
 ## A downloaded file is missing from the sidebar
 
-Confirm you are running 0.4.0. Vast recovers active records after an interface reload. Inspect the Downloads panel and the chosen filesystem location separately. Temporary-session records are not durable history, and clearing a record does not delete its file.
+Confirm you are running 0.3.0. This release fixes missing listeners for workspaces created early at startup and recovers active records after an interface reload. Inspect the Downloads panel and the chosen filesystem location separately. Temporary-session records are not durable history, and clearing a record does not delete its file.
 
 ## Retry fails for a signed-in download
 
@@ -60,7 +60,7 @@ Return to the original workspace, verify that the website is still signed in, an
 
 ## The standalone updater returns 404
 
-The updater needs its version's public GitHub manifest and ZIP. A private candidate is not a public update feed. Check the [official release](https://github.com/vstxx/vast-public/releases/tag/v0.4.0), network access, and the URL shown in its log. Do not replace a failed download with a file from an untrusted mirror.
+The updater needs its version's public GitHub manifest and ZIP. A private candidate is not a public update feed. Check the [official release](https://github.com/vstxx/vast-public/releases/tag/v0.3.0), network access, and the URL shown in its log. Do not replace a failed download with a file from an untrusted mirror.
 
 ## I installed Vast from Microsoft Store
 
@@ -72,4 +72,4 @@ Close every instance of that Vast installation normally, reopen it, and review a
 
 ## Purist or a menu does not respond
 
-Confirm version 0.4.0, try Ctrl/Cmd+L, and test the Horizontal layout to isolate the issue. Report the layout, display scaling, window size, and exact control.
+Confirm version 0.3.0, try Ctrl/Cmd+L, and test the Horizontal layout to isolate the issue. Report the layout, display scaling, window size, and exact control. This release repairs Purist hit testing and More Tabs/context-menu routing.
