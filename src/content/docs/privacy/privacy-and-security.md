@@ -20,7 +20,7 @@ Vast review and package signing reduce risk but do not replace a publisher's pri
 
 ## Tracking and ad blocking
 
-Vast 0.3.0 retains built-in common-tracker protection. Its former native ad-block engine, downloadable filter lists, blocking modes, and ad-block allowlist controls have been removed.
+Vast 0.4.0 retains built-in common-tracker protection. Its former native ad-block engine, downloadable filter lists, blocking modes, and ad-block allowlist controls are no longer included.
 
 Install [Adblocker for Vast](/extensions/adblocker-for-vast/) from Extensions → Explore for filter-list-driven network and cosmetic blocking. Its lists, custom filters, and allowlist are configured in the extension, not in browser Privacy settings. The browser's cookie, link-cleaning, fingerprinting, and WebRTC controls remain separate.
 

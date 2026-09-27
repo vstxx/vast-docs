@@ -89,8 +89,8 @@ Public source snapshots are distributed through the Vast public repository. Deve
 
 Read **Architecture Overview** for the public trust model and **Extension Development** for the extension model.
 
-## Targeting the 0.3.0 release
+## Targeting the 0.4.0 release
 
-Use the public v0.3.0 tag when reproducing this release rather than a moving branch. The published source provenance identifies the original build commit. Public snapshots omit private operational material; not every protected release workflow can run in an unauthenticated fork.
+Use the public v0.4.0 tag when reproducing this release rather than a moving branch. The published source provenance identifies the original build commit. Public snapshots omit private operational material; not every protected release workflow can run in an unauthenticated fork.
 
 For changes to radius, downloads, or menus, run the corresponding regression checks from the source package as well as application tests. Build/package sizes and performance claims must be measured; passing a source-level test alone does not verify an installed Windows package.

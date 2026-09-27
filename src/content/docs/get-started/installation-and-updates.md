@@ -5,7 +5,7 @@ description: "Install Vast 0.4.0 on Windows and choose the correct update path f
 
 ## Current release
 
-Vast **0.4.0** is the current direct Windows x64 release, published on **27 September 2026**. The previous direct release is 0.3.0. Read the [release notes](/releases/0-4-0/).
+Vast **0.4.0** is the current direct Windows x64 release, published on **27 September 2026**. Read the [release notes](/releases/0-4-0/).
 
 | Package | Use it for | Updates |
 | --- | --- | --- |

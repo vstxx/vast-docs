@@ -54,7 +54,7 @@ The bookmarks bar can be always visible, hidden, or shown only on New Tab.
 
 Vast respects reduced-motion and reduced-transparency behavior. Visual effects should degrade without removing the underlying controls.
 
-## Changes in 0.3.0
+## Layout behavior
 
 Purist's address bar and embedded navigation buttons now respond correctly to pointer input. Use Ctrl/Cmd+L to focus the omnibar from the keyboard. Purist remains experimental.
 

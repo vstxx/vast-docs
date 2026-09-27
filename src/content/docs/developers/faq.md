@@ -47,13 +47,13 @@ No. It is designed for local/private network discovery, not public-IP scanning.
 
 Check whether Vast Labs, the individual feature switch, Experimental features, or Developer Mode is required. Some entries are deliberately hidden until their parent capability is enabled.
 
-## What changed in 0.3.0?
+## What changed in 0.4.0?
 
-See the [complete release notes](/releases/0-3-0/) for downloads, global radius, background updates, menus, Settings, and Windows integration.
+See the [release notes](/releases/0-4-0/) for extension compatibility, Extension Hub installation, Adblocker for Vast, resizable extension menus, appearance, and release integrity.
 
 ## Where did the native Adblocker settings go?
 
-They were removed in 0.3.0. Install [Adblocker for Vast](/extensions/adblocker-for-vast/) for filter-list and cosmetic blocking. Common-tracker protection and the other browser privacy controls remain built in.
+They are no longer built in. Install [Adblocker for Vast](/extensions/adblocker-for-vast/) for filter-list and cosmetic blocking. Common-tracker protection and the other browser privacy controls remain built in.
 
 ## Can the standalone updater update the Microsoft Store edition?
 
