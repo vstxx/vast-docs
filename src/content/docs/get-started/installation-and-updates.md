@@ -1,16 +1,16 @@
 ---
 title: "Installation & Updates"
-description: "Install Vast 0.3.0 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
+description: "Install Vast 0.4.0 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
 ---
 
 ## Current release
 
-Vast **0.3.0** is the current direct Windows x64 release, published on **12 September 2026**. The previous direct release is 0.2.7. Read the [complete changelog](/releases/0-3-0/).
+Vast **0.4.0** is the current direct Windows x64 release, published on **27 September 2026**. The previous direct release is 0.3.0. Read the [release notes](/releases/0-4-0/).
 
 | Package | Use it for | Updates |
 | --- | --- | --- |
-| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.3.0/Vast-Setup-0.3.0.exe) | A normal installed copy of Vast | Built-in background updates, or the direct standalone updater |
-| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.3.0/Vast-0.3.0-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
+| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.4.0/Vast-Setup-0.4.0.exe) | A normal installed copy of Vast | Built-in background updates, or the direct standalone updater |
+| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.4.0/Vast-0.4.0-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
 | [Microsoft Store](https://apps.microsoft.com/detail/9MTWRJCKMDTX) | A Store-managed installation | Microsoft Store only |
 
 The Store has a separate review and rollout. Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
@@ -37,7 +37,7 @@ The installation and profile are matched when preparing an update, including cus
 
 ## Standalone updater
 
-The [Vast 0.3.0 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.3.0/VastUpdater-0.3.0.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
+The [Vast 0.4.0 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.4.0/VastUpdater-0.4.0.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
 
 Close Vast and use the updater for an existing direct installation. If installation detection fails, review the log and the updater's explicit installation-path option instead of pointing it at a profile directory.
 
@@ -59,12 +59,12 @@ Normal updates preserve profile data. Back up important data before a channel sw
 
 ## Verify a download
 
-The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.3.0) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
+The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.4.0) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
 
 For example, compute a local installer hash in PowerShell:
 
 ~~~powershell
-Get-FileHash .\Vast-Setup-0.3.0.exe -Algorithm SHA256
+Get-FileHash .\Vast-Setup-0.4.0.exe -Algorithm SHA256
 ~~~
 
-Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.3.0/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.3.0/Vast-0.3.0-update.zip) is an updater payload, not an MSIX package.
+Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.4.0/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.4.0/Vast-0.4.0-update.zip) is an updater payload, not an MSIX package.

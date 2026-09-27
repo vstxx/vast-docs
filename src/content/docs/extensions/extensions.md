@@ -17,6 +17,8 @@ Extensions can come from:
 * a local Vast extension package;
 * an unpacked developer extension.
 
+The 0.4.0 catalog includes Bitwarden and Proton Pass packages that keep the upstream extension code and ID. iCloud Passwords uses a narrowly scoped upstream install path: Vast retrieves Apple's original Chrome Web Store extension rather than hosting a `.vext` copy. These listings do not imply a publisher partnership or endorsement. Apple may require iCloud for Windows and account authorization before iCloud Passwords works.
+
 ## Compatibility
 
 Each extension can be marked as:
