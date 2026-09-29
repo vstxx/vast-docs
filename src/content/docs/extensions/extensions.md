@@ -14,8 +14,11 @@ The Extensions page separates **Explore** (the Vast Extensions catalog) from **I
 Extensions can come from:
 
 * Vast Extensions catalog;
+* a narrowly scoped upstream install for iCloud Passwords from Apple's Chrome Web Store listing;
 * a local Vast extension package;
 * an unpacked developer extension.
+
+The catalog lists Bitwarden and Proton Pass with upstream publisher attribution; their packages keep the original extension IDs. iCloud Passwords is retrieved from Apple upstream with its original ID, not repackaged or hosted by Vast. A catalog listing does not imply that its upstream publisher has endorsed Vast.
 
 ## Compatibility
 

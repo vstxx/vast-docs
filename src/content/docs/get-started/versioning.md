@@ -61,12 +61,12 @@ The Store identity version is configured separately from the three-part browser 
 
 For Store submissions, Vast uses a four-part package version with a final component of `0`. Each new package version must exceed the highest version already consumed by Partner Center, including previously uploaded packages. A Store package version does not describe the scale of browser changes.
 
-For the 0.3.0 release preparation:
+For the 0.4.1 direct release:
 
 ```
-Browser product version: 0.3.0
-Previous browser release: 0.2.7
-Prepared Store package version: 1.2.9.0
+Browser product version: 0.4.1
+Previous direct browser release: 0.3.0
+Microsoft Store package: separate certification and rollout
 ```
 
 When referring to a Vast release in documentation, release notes, or other public material, use the three-part version unless the exact Microsoft Store package version is specifically relevant.
