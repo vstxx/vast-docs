@@ -1,16 +1,16 @@
 ---
 title: "Installation & Updates"
-description: "Install Vast 0.4.1 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
+description: "Install Vast 0.4.2 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
 ---
 
 ## Current release
 
-Vast **0.4.1** is the current direct Windows x64 release. The previous direct release is 0.3.0. Read the [release notes](/releases/0-4-1/); [0.3.0 notes](/releases/0-3-0/) remain available for historical reference.
+Vast **0.4.2** is the current direct Windows x64 release. The previous direct release is 0.4.1. Read the [release notes](/releases/0-4-2/); [0.4.1 notes](/releases/0-4-1/) remain available for historical reference.
 
 | Package | Use it for | Updates |
 | --- | --- | --- |
-| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.4.1/Vast-Setup-0.4.1.exe) | A normal installed copy of Vast | Built-in background updates, or the direct standalone updater |
-| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.4.1/Vast-0.4.1-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
+| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.4.2/Vast-Setup-0.4.2.exe) | A normal installed copy of Vast | Built-in background updates, or the direct standalone updater |
+| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.4.2/Vast-0.4.2-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
 | [Microsoft Store](https://apps.microsoft.com/detail/9MTWRJCKMDTX) | A Store-managed installation | Microsoft Store only |
 
 The Store has a separate review and rollout. Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
@@ -37,7 +37,7 @@ The installation and profile are matched when preparing an update, including cus
 
 ## Standalone updater
 
-The [Vast 0.4.1 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.4.1/VastUpdater-0.4.1.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
+The [Vast 0.4.2 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.4.2/VastUpdater-0.4.2.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
 
 Close Vast and use the updater for an existing direct installation. If installation detection fails, review the log and the updater's explicit installation-path option instead of pointing it at a profile directory.
 
@@ -59,12 +59,12 @@ Normal updates preserve profile data. Back up important data before a channel sw
 
 ## Verify a download
 
-The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.4.1) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
+The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.4.2) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
 
 For example, compute a local installer hash in PowerShell:
 
 ~~~powershell
-Get-FileHash .\Vast-Setup-0.4.1.exe -Algorithm SHA256
+Get-FileHash .\Vast-Setup-0.4.2.exe -Algorithm SHA256
 ~~~
 
-Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.4.1/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.4.1/Vast-0.4.1-update.zip) is an updater payload, not an MSIX package.
+Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.4.2/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.4.2/Vast-0.4.2-update.zip) is an updater payload, not an MSIX package.
