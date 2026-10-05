@@ -41,9 +41,11 @@ Cookies and browser session state are included in normal profile handling where 
 
 Labs features may change faster than the stable browsing surface. Their UI, storage model, or compatibility behavior can change between releases.
 
-## Distribution and update limits in 0.4.2
+## Distribution and update limits in 0.4.3
 
 The direct Windows release is intentionally unsigned. Store certification and availability are separate from GitHub publication. The direct standalone updater does not update Microsoft Store/MSIX or Portable installations.
+
+The installed 0.4.2 automatic updater can fail during the next-start installer handoff. Its legacy feed stays pinned to 0.4.2; install 0.4.3 manually once to receive future automatic updates through the new feed. Direct and Store installations have separate default profile roots.
 
 Extensions, including Adblocker for Vast, do not run in private or temporary workspaces. A private download's saved file can remain on disk even though its history is not persisted. Retrying a download cannot restore expired authentication or a destroyed temporary session.
 

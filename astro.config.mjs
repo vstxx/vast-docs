@@ -40,7 +40,7 @@ export default defineConfig({
         {
           label: 'Get Started',
           collapsed: true,
-          items: ['get-started/getting-started', 'get-started/installation-and-updates', 'get-started/versioning', 'releases/0-4-2', 'releases/0-4-1', 'releases/0-3-0'],
+          items: ['get-started/getting-started', 'get-started/installation-and-updates', 'get-started/versioning', 'releases/0-4-3', 'releases/0-4-2', 'releases/0-4-1', 'releases/0-3-0'],
         },
         {
           label: 'Using Vast',

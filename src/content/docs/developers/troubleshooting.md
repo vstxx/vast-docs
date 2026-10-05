@@ -52,7 +52,7 @@ Include the Vast version, platform, clear reproduction steps, expected behavior,
 
 ## A downloaded file is missing from the sidebar
 
-Confirm you are running the current direct release, 0.4.2. The download fixes introduced in 0.3.0 cover workspaces created early at startup and recover active records after an interface reload. Inspect the Downloads panel and the chosen filesystem location separately. Temporary-session records are not durable history, and clearing a record does not delete its file.
+Confirm you are running the current direct release, 0.4.3. The download fixes introduced in 0.3.0 cover workspaces created early at startup and recover active records after an interface reload. Inspect the Downloads panel and the chosen filesystem location separately. Temporary-session records are not durable history, and clearing a record does not delete its file.
 
 ## Retry fails for a signed-in download
 
@@ -60,7 +60,7 @@ Return to the original workspace, verify that the website is still signed in, an
 
 ## The standalone updater returns 404
 
-The updater needs its version's public GitHub manifest and ZIP. A private candidate is not a public update feed. Check the [official release](https://github.com/vstxx/vast-public/releases/tag/v0.4.2), network access, and the URL shown in its log. Do not replace a failed download with a file from an untrusted mirror.
+The updater needs its version's public GitHub manifest and ZIP. A private candidate is not a public update feed. Check the [official release](https://github.com/vstxx/vast-public/releases/tag/v0.4.3), network access, and the URL shown in its log. A pre-publication `stable-v2.yml` 404 for 0.4.3 should clear after restarting against the public release. Do not replace a failed download with a file from an untrusted mirror.
 
 ## I installed Vast from Microsoft Store
 
@@ -72,4 +72,4 @@ Close every instance of that Vast installation normally, reopen it, and review a
 
 ## Purist or a menu does not respond
 
-Confirm you are running the current direct release, 0.4.2. Try Ctrl/Cmd+L and test the Horizontal layout to isolate the issue. Report the layout, display scaling, window size, and exact control. The relevant Purist hit-testing and More Tabs/context-menu fixes were introduced in 0.3.0.
+Confirm you are running the current direct release, 0.4.3. Try Ctrl/Cmd+L and test the Horizontal layout to isolate the issue. Report the layout, display scaling, window size, and exact control. The relevant Purist hit-testing and More Tabs/context-menu fixes were introduced in 0.3.0.
