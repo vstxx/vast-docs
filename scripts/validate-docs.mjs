@@ -48,6 +48,10 @@ for (const file of files) {
   }
 }
 
+const config = await readFile(new URL('../astro.config.mjs', import.meta.url), 'utf8');
+if (!routes.has('/releases/0-5-0/')) failures.push('missing current 0.5.0 release page');
+if (!config.includes("'releases/0-5-0'")) failures.push('missing 0.5.0 sidebar release entry');
+
 if (files.length < 40) failures.push(`expected at least 40 documentation pages, found ${files.length}`);
 
 if (failures.length) {
