@@ -66,6 +66,10 @@ if (!policies.includes('GPL-3.0-only') || /MIT License applies to Vast-owned/.te
 const config = await readFile(new URL('../astro.config.mjs', import.meta.url), 'utf8');
 if (!routes.has('/releases/0-5-0/')) failures.push('missing current 0.5.0 release page');
 if (!config.includes("'releases/0-5-0'")) failures.push('missing 0.5.0 sidebar release entry');
+const currentRelease = await readFile(join(root, 'releases/0-5-0.md'), 'utf8');
+for (const heading of ["What's new", 'Improvements and fixes', 'Important upgrade information', 'Known limitations']) {
+  if (!currentRelease.includes(`## ${heading}`)) failures.push(`0.5.0 release notes: missing ${heading} section`);
+}
 
 if (files.length < 40) failures.push(`expected at least 40 documentation pages, found ${files.length}`);
 
