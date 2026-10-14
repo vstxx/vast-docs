@@ -3,7 +3,7 @@ title: "Getting Started"
 description: "Install Vast, understand a clean profile, and learn the essential navigation and shortcuts."
 ---
 
-Vast opens with one workspace and one New Tab on a clean profile. The default first-launch experience is intentionally sparse: the sidebar and side panel are closed, startup audio is muted, and New Tab focuses on search with no preloaded quick links.
+Vast opens with one workspace and one New Tab on a clean profile. The default first-launch experience is intentionally sparse: the tab sidebar and tools sidebar are closed, startup audio is muted, and New Tab focuses on search with no preloaded quick links.
 
 ## Install
 

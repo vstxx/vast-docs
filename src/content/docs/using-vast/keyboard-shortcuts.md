@@ -11,6 +11,8 @@ Vast shortcuts are editable in **Settings → Shortcuts**. The defaults are desi
 | Focus address bar | `Ctrl/Cmd+L`       |
 | New tab           | `Ctrl/Cmd+T`       |
 | Close tab         | `Ctrl/Cmd+W`       |
+| Next tab | `Ctrl/Cmd+Tab` |
+| Previous tab | `Ctrl/Cmd+Shift+Tab` |
 | Reload            | `Ctrl/Cmd+R`       |
 | Reopen closed tab | `Ctrl/Cmd+Shift+T` |
 | Toggle sidebar    | `Ctrl/Cmd+B`       |
@@ -21,6 +23,8 @@ Vast shortcuts are editable in **Settings → Shortcuts**. The defaults are desi
 | Zoom out          | `Ctrl/Cmd+Minus`   |
 | Reset zoom        | `Ctrl/Cmd+0`       |
 | Print             | `Ctrl/Cmd+P`       |
+
+Plain **F11** toggles browser fullscreen from browser chrome or website content. It is separate from the editable shortcut map and website fullscreen permission.
 
 ## Editing shortcuts
 

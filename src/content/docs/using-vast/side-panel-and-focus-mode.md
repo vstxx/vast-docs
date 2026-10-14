@@ -1,9 +1,9 @@
 ---
-title: "Side Panel & Focus Mode"
+title: "Sidebar & Focus Mode"
 description: "Use Notes, Bookmarks, History, Downloads, Reading List, extension panels, and Focus Mode."
 ---
 
-The side panel keeps local browser tools available without forcing you away from the current page.
+The sidebar keeps local browser tools available without forcing you away from the current page.
 
 ## Panel views
 
@@ -17,13 +17,11 @@ The panel can show:
 
 Vast remembers relevant panel state as part of the local profile and can remember site-oriented UI context where applicable.
 
-## Panel modes
+## Sidebar modes
 
-**Auto** lets Vast choose behavior based on the available window layout.
+**Unpinned** docks the sidebar beside the page. Use the pin control beside the title to switch to **Pinned over page**, which floats above page content and can be dragged. Its position is saved locally and kept below the browser chrome. Settings also offers Auto mode.
 
-**Docked** reserves interface space for the panel.
-
-**Overlay** floats the panel over the browsing area instead of permanently reducing page width.
+Toggle visibility with the button beside the address bar or Ctrl/Cmd+B.
 
 You can configure panel width and whether labels are displayed.
 

@@ -13,7 +13,7 @@ Current visible actions include:
 * open a Vast internal page;
 * switch workspace;
 * create a note;
-* open a side panel;
+* open a sidebar;
 * save a session snapshot;
 * close duplicate tabs;
 * hibernate inactive tabs;

@@ -18,6 +18,10 @@ Vast Browser, Vast Relay, the Extensions Hub, and independently published extens
 
 Vast review and package signing reduce risk but do not replace a publisher's privacy obligations. See [Publishing & policies](/extensions/publishing-and-policies/).
 
+## Workspace isolation
+
+Persistent isolated workspaces use distinct persistent browser partitions for website cookies and storage. Private/ephemeral workspaces use nonpersistent partitions and do not load extensions. Shared workspaces use the default shared partition. Bookmarks and history are browser-level state; workspace isolation does not promise anonymity or a separate fingerprint. Networks, websites, the operating system, and files saved by downloads can retain traces. See the [workspace isolation matrix](/using-vast/tabs-and-workspaces/).
+
 ## Tracking and ad blocking
 
 Vast 0.3.0 retains built-in common-tracker protection. Its former native ad-block engine, downloadable filter lists, blocking modes, and ad-block allowlist controls have been removed.
@@ -73,9 +77,9 @@ Vast can ask before opening links that hand off to other applications.
 
 Potentially dangerous downloads can trigger additional warnings.
 
-## Autofill confirmation
+## Password-manager extensions
 
-Password autofill can be configured to always require user confirmation.
+The native vault and its autofill controls are retired in 0.5.0. External extensions manage their own permissions, unlock flows, and autofill behavior. Their smoke-test evidence is limited; see [Password Manager (retired)](/labs/password-manager/).
 
 ## Security boundaries
 

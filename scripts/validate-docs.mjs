@@ -35,6 +35,7 @@ for (const file of files) {
   if (/^#\s+/m.test(source.replace(/^---[\s\S]*?---\s*/, ''))) failures.push(`${display}: duplicate H1`);
   if (/gitbook\.io|\{%|\{% endhint|\/pages\/[A-Za-z0-9]+/.test(source)) failures.push(`${display}: contains a GitBook migration artifact`);
   if (/\b(?:relay\.vastbrowser\.com|controlpanel\.vastbrowser\.com)\b|vast:(?:relay|storage|passwords|network|browser):/.test(source)) failures.push(`${display}: contains a prohibited private implementation reference`);
+  if (/current 0\.4\.[23] release|0\.4\.[23]\*\* is the current direct/i.test(source)) failures.push(`${display}: outdated current-release claim`);
   if (!display.startsWith('releases/')) {
     if (/Labs (?:is |start[s]? )?disabled on a fresh profile|Vast Labs disabled|vault starts locked|Provides a local encrypted credential vault|Labs-gated local password vault|Password Manager\s*\|\s*Labs/.test(source)) failures.push(`${display}: obsolete native password or Labs-default guidance`);
     if (/vast:\/\/passwords/.test(source) && !/retired/i.test(source)) failures.push(`${display}: active retired passwords route`);
@@ -52,6 +53,10 @@ for (const file of files) {
   }
 }
 
+const extensions = await readFile(join(root, 'extensions/extensions.md'), 'utf8');
+if (!/listing.URL/i.test(extensions) || !/full Chrome Web Store navigation remains guarded/i.test(extensions)) failures.push('extensions: must distinguish listing-URL installs from guarded full-store navigation');
+const policies = await readFile(join(root, 'extensions/publishing-and-policies.md'), 'utf8');
+if (!policies.includes('GPL-3.0-only') || /MIT License applies to Vast-owned/.test(policies)) failures.push('publishing policies: must identify GPL-3.0-only desktop source separately from third-party licenses');
 const config = await readFile(new URL('../astro.config.mjs', import.meta.url), 'utf8');
 if (!routes.has('/releases/0-5-0/')) failures.push('missing current 0.5.0 release page');
 if (!config.includes("'releases/0-5-0'")) failures.push('missing 0.5.0 sidebar release entry');

@@ -27,7 +27,7 @@ Fingerprint and identity spoofing is best-effort and cannot guarantee that every
 
 ## Extensions
 
-Extension compatibility varies. Some Chrome APIs or complex extension assumptions may be partially supported or unsupported.
+Extension compatibility varies. Some Chrome APIs or complex extension assumptions may be partially supported or unsupported. Direct Chrome Web Store listing-URL installation is available; full store navigation remains guarded in packaged 0.5.0. Extensions do not run in private/ephemeral sessions. Password-manager evidence covers smoke tests only.
 
 ## Password portability
 

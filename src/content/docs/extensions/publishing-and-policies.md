@@ -43,4 +43,4 @@ Review status, decisions, publisher notification, reasons, and preserved evidenc
 
 ## Copyright scope
 
-The MIT License applies to Vast-owned source where the repository says so. Publisher extensions, bundled libraries, names, icons, screenshots, and other third-party materials remain the property of their respective owners and follow their own licenses and terms.
+Vast-owned desktop source is licensed under **GPL-3.0-only**. This scope does not assign that license to independent publisher extensions or other services. Publisher extensions, bundled libraries, names, icons, screenshots, and other third-party materials remain the property of their respective owners and follow their own licenses and terms.

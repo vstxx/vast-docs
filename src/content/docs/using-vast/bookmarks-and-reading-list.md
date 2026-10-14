@@ -30,7 +30,7 @@ The bookmarks bar can be:
 
 ### Side panel and Command Palette
 
-Bookmarks are available from the side panel and are searchable from the Command Palette. Opening a bookmark from a fresh New Tab can reuse that tab instead of creating unnecessary tab clutter.
+Bookmarks are available from the sidebar and are searchable from the Command Palette. Opening a bookmark from a fresh New Tab can reuse that tab instead of creating unnecessary tab clutter.
 
 ## Reading List
 

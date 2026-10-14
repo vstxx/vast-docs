@@ -1,6 +1,6 @@
 ---
 title: "Interface & Layouts"
-description: "Understand Horizontal, Vertical, and Purist layouts, plus side panel and appearance behavior."
+description: "Understand Horizontal, Vertical, and Purist layouts, plus sidebar and appearance behavior."
 ---
 
 Vast separates the browsing engine from the surrounding browser chrome. The page renderer stays Chromium-based while the visible browser interface can be rearranged extensively.
@@ -40,15 +40,19 @@ Settings exposes detailed visual tuning, including:
 
 These settings affect the browser interface. Website rendering remains controlled by the site and Chromium unless you explicitly enable website darkening.
 
-## Side panel
+## Sidebar
 
-The side panel can show local Notes, Bookmarks, History, Downloads, and Reading List. Depending on layout and settings it can behave automatically, dock to the window, or overlay the page.
+The sidebar can show local Notes, Bookmarks, History, Downloads, and Reading List. Toggle visibility using the button beside the address bar or Ctrl/Cmd+B. Unpinned, it docks beside the page. Use the pin control beside its title to keep it over the page; the pinned sidebar can be dragged and its position is saved.
 
 You can also change its width and whether labels are shown.
 
 ## Bookmarks bar
 
 The bookmarks bar can be always visible, hidden, or shown only on New Tab.
+
+## Fullscreen
+
+Press plain **F11** to toggle browser fullscreen from the browser interface or website content. This browser command is separate from a website's fullscreen permission.
 
 ## Reduced effects
 
@@ -58,4 +62,4 @@ Vast respects reduced-motion and reduced-transparency behavior. Visual effects s
 
 Purist's address bar and embedded navigation buttons now respond correctly to pointer input. Use Ctrl/Cmd+L to focus the omnibar from the keyboard. Purist remains experimental.
 
-Corner radius now controls rounded Vast-owned surfaces consistently, including menus and autofill; Settings and Notes use calmer effects and consistent Dim backgrounds. See [Appearance Reference](/customization/appearance-reference/).
+Corner radius now controls rounded Vast-owned surfaces consistently, including menus; Settings and Notes use calmer effects and consistent Dim backgrounds. See [Appearance Reference](/customization/appearance-reference/).

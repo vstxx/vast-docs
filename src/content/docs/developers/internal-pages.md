@@ -9,7 +9,9 @@ Vast uses `vast://` routes for browser-owned pages. They are part of the applica
 | ------------------------- | ------------------------------ | ---------------------------------- |
 | `vast://newtab`           | New Tab                        | Always                             |
 | `vast://notes`            | Full-page local notebook       | Always                             |
-| `vast://extensions`       | Extension manager/catalog      | Always                             |
+| `vast://extensions` | Extension manager/catalog | Available; extension runtime excluded from private/ephemeral workspaces |
+| `vast://onboarding` | First-run setup | Onboarding flow |
+| `vast://unsupported-extension-store` | Guarded extension-store notice | When full store navigation is blocked |
 | `vast://pdf`              | Internal PDF viewer            | When viewing supported PDF content |
 | `vast://session-timeline` | Workspace snapshot history     | Always                             |
 | `vast://site-data`        | Site-data view                 | Relevant settings/tools            |

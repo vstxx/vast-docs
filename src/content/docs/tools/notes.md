@@ -3,7 +3,7 @@ title: Notes
 description: Create, search, organize, preview, and export local Markdown notes in Vast.
 ---
 
-Notes is Vast's local notebook. Open it from the Command Palette, the side panel, or `vast://notes`.
+Notes is Vast's local notebook. Open it from the Command Palette, the sidebar, or `vast://notes`.
 
 ## Create and edit notes
 
@@ -26,7 +26,7 @@ Deleting a note offers a short undo action. Archived notes stay in the local pro
 
 ## Side panel notes
 
-The side panel provides a compact note view for the active workspace or page. Use the full Notes page when you need search, tags, Markdown preview, archives, or broader organization.
+The sidebar provides a compact note view for the active workspace or page. Use the full Notes page when you need search, tags, Markdown preview, archives, or broader organization.
 
 ## Export
 
@@ -36,4 +36,4 @@ Vast does not send note text to a remote service by default.
 
 ## Page-linked notes and quotes
 
-Use a page's context menu to create a linked note or save selected text as a quote. Confirm the linked page and workspace when organizing it in Notes. The side panel and full-page editor follow the selected theme and global corner radius, including Dim mode.
+Use a page's context menu to create a linked note or save selected text as a quote. Confirm the linked page and workspace when organizing it in Notes. The sidebar and full-page editor follow the selected theme and global corner radius, including Dim mode.

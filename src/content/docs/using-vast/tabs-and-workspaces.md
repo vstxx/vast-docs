@@ -52,11 +52,13 @@ Each workspace has:
 
 ## Workspace identity modes
 
-**Isolated and persistent** keeps a dedicated persistent browser session for that workspace.
+| Workspace mode | Browser partition | Website cookies and storage | Extensions |
+| --- | --- | --- | --- |
+| Isolated and persistent | Distinct persistent partition per workspace | Separate from other isolated workspaces and retained across restarts | Available, subject to compatibility and permissions |
+| Private / ephemeral (Temporary) | Distinct nonpersistent partition | Temporary browser session; not a normal restorable session | Unavailable |
+| Shared legacy session | Default shared partition | Shared with other workspaces using that partition | Available, subject to compatibility and permissions |
 
-**Temporary** uses an ephemeral browsing session intended for disposable or private work. Temporary workspace state is not treated the same way as a normal restorable session.
-
-**Shared legacy session** uses a common session context for compatibility.
+Bookmarks and history are browser-level Vast state, not separate per-workspace stores. Session separation does not guarantee anonymity, fingerprint isolation, or protection from websites, networks, or the operating system. Private downloads can leave saved files on disk. See [Privacy & Security](/privacy/privacy-and-security/).
 
 ## Workspace network routing
 

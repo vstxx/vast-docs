@@ -18,8 +18,8 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 | Background tint                    | Main background tone                         |
 | Surface tint                       | Panel/surface tone                           |
 | Sidebar density                    | Comfortable or compact spacing               |
-| Sidebar mode                       | Auto, docked, overlay                        |
-| Sidebar width                      | Side-panel width                             |
+| Sidebar mode | Auto, docked, or Pinned over page |
+| Sidebar width | Sidebar width |
 | Sidebar labels                     | Show/hide labels                             |
 | Corner radius                      | Interface roundness                          |
 | Glassiness                         | Translucency effect strength                 |
@@ -52,7 +52,9 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 | Show internal pages in Command Palette | Include `vast://` destinations in search            |
 | Experimental features                  | Enable experimental UI such as Purist               |
 | Developer Mode                         | Enable development/troubleshooting controls         |
-| Enable Vast Labs                       | Review Labs visibility and individual switches                         |
+
+
+The sidebar visibility button is beside the address bar. Its pin control switches between docked and pinned-over-page behavior; only a pinned sidebar can be dragged. The position is saved locally.
 
 ## Labs
 

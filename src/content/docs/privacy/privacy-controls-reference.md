@@ -53,6 +53,10 @@ Vast ships with compatibility-oriented exceptions for common real-time communica
 * **Disable favicons** — stop storing/displaying site icons where that setting applies.
 * **Make new workspaces temporary by default** — start new workspaces with ephemeral-session behavior.
 
+## Workspace boundaries
+
+Temporary/private sessions use nonpersistent browser partitions and do not load extensions. Persistent isolated sessions keep their own cookies and site storage across restarts; shared sessions use the default partition. Bookmarks and history remain browser-level state. Changing a privacy switch does not create anonymous browsing or fingerprint isolation. See [Tabs & Workspaces](/using-vast/tabs-and-workspaces/).
+
 ## Fake browsing history
 
 Fake history is an optional local-noise experiment, off by default. It does not hide network traffic, website logs, operating-system records, or actual history from an attacker that has another data source. Use it only if you understand that narrow purpose.

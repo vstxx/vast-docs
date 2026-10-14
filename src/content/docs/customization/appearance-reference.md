@@ -1,6 +1,6 @@
 ---
 title: "Appearance Reference"
-description: "Reference Vast’s themes, colors, effects, density, layout, side panel, and startup presentation controls."
+description: "Reference Vast’s themes, colors, effects, density, layout, sidebar, and startup presentation controls."
 ---
 
 Vast's appearance controls are intentionally granular. They let you tune the browser shell without changing website content unless a setting explicitly says it affects websites.
@@ -15,7 +15,7 @@ Vast's appearance controls are intentionally granular. They let you tune the bro
 | Surface tint                | Panels and elevated surfaces                        | Separate content layers                |
 | Background style            | Graphite, Midnight, Aurora, Violet, Carbon, Frost   | Base visual character                  |
 | Sidebar density             | Comfortable or Compact                              | Trade space for readability            |
-| Sidebar mode                | Auto, Docked, Overlay                               | Control panel/page competition         |
+| Sidebar mode                | Auto, Docked, Pinned over page                               | Control panel/page competition         |
 | Sidebar width               | Panel width                                         | Fit notes/history content              |
 | Sidebar labels              | Show/hide labels                                    | Reduce visual noise                    |
 | Corner radius               | UI roundness                                        | Change geometric character             |
@@ -35,6 +35,8 @@ Vast's appearance controls are intentionally granular. They let you tune the bro
 | New-Tab-only bookmarks bar  | Restrict bar to New Tab                             | Keep websites visually cleaner         |
 | Force dark mode on websites | Best-effort website darkening                       | Dark workflow on sites without a theme |
 
+The visibility button is beside the address bar. Unpinned, the sidebar is docked; pinned, it floats over the page and can be dragged. Its position is saved locally.
+
 ## Accessibility and compatibility
 
 Visual customization should never be required to access a browser action. Reduced-motion and reduced-transparency preferences take priority over decorative effects where supported.
@@ -43,7 +45,7 @@ Website force-dark behavior can occasionally produce poor contrast or broken sit
 
 ## Global corner radius in 0.3.0
 
-**Corner radius** ranges from **6 to 36 px** (default **26 px**). It sets one base value with proportional rounding for small controls, cards, panels, and dialogs. Tabs, menus, Settings, internal pages, notifications, PDF controls, and autofill surfaces follow that value; not every element uses the same literal pixel radius.
+**Corner radius** ranges from **6 to 36 px** (default **26 px**). It sets one base value with proportional rounding for small controls, cards, panels, and dialogs. Tabs, menus, Settings, internal pages, notifications, PDF controls, follow that value; not every element uses the same literal pixel radius.
 
 The setting is retained for startup and window creation. Real circles, status dots, decorative radial shapes, print layout, and intentional square docked edges keep their structural geometry. It does not round arbitrary website content.
 

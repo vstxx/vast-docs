@@ -14,11 +14,17 @@ The Extensions page separates **Explore** (the Vast Extensions catalog) from **I
 Extensions can come from:
 
 * Vast Extensions catalog;
-* a narrowly scoped upstream install for iCloud Passwords from Apple's Chrome Web Store listing;
+* direct Chrome Web Store listing-URL installation, including Apple's upstream iCloud Passwords listing;
 * a local Vast extension package;
 * an unpacked developer extension.
 
 The catalog lists Bitwarden and Proton Pass with upstream publisher attribution; their packages keep the original extension IDs. iCloud Passwords is retrieved from Apple upstream with its original ID, not repackaged or hosted by Vast. A catalog listing does not imply that its upstream publisher has endorsed Vast.
+
+## Chrome Web Store listing installation
+
+Use the direct listing-URL installation flow in Extensions with the extension's Chrome Web Store listing URL. Review the package, compatibility, and requested permissions before approving it. Full Chrome Web Store navigation remains guarded in packaged 0.5.0; listing-URL installation does not mean that unrestricted store browsing or every Chrome extension works.
+
+Bitwarden, Proton Pass, and iCloud Passwords have smoke-test evidence only. Every website, vault workflow, and integration is not certified. These extensions are unavailable in private/ephemeral workspaces.
 
 ## Compatibility
 

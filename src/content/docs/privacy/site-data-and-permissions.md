@@ -28,6 +28,10 @@ Use **Revoke** to remove a saved override and return to the global policy.
 
 Vast can show a site's origin, security state, storage counts, service workers, permissions, and local blocking statistics.
 
+## Workspace storage
+
+Site cookies and storage follow the workspace partition: distinct persistent storage for an isolated persistent workspace, nonpersistent storage for a private/ephemeral workspace, and common default storage for shared workspaces. Bookmarks and history are browser-level state. Confirm the intended workspace before clearing site data; signing out of one isolated session does not imply that every other partition was cleared.
+
 ## Clearing data
 
 You can clear site data globally or configure selected domains to be cleared on close.
