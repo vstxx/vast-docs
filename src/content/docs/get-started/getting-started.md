@@ -22,8 +22,9 @@ A new profile starts with:
 * built-in common-tracker blocking and tracking-parameter cleaning enabled;
 * optional filter-list ad blocking available by installing Adblocker for Vast;
 * third-party cookie blocking enabled;
-* Vast Labs disabled;
-* password management, network discovery, automation, diagnostics, and spoofing hidden until explicitly enabled.
+* individual Labs selected by fresh-onboarding defaults; review each switch in Settings.
+
+The generic Labs fallback remains fail closed, and global `labs.enabled` does not gate individual features. The built-in Password Manager is retired in 0.5.0; see [external alternatives](/labs/password-manager/).
 
 ## Set Vast as your default browser
 

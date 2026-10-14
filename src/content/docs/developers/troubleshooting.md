@@ -24,15 +24,15 @@ It may have been discarded to release memory. Review the memory target, hibernat
 
 ## A Labs page is missing
 
-Enable **Advanced → Enable Vast Labs**, then enable the individual feature in the Labs section. Some controls also require Experimental features or Developer Mode instead of Labs.
+Review the individual feature switch in Settings. Fresh onboarding selects individual Labs, but migrated choices and the fail-closed generic fallback can differ. Global `labs.enabled` does not gate individual features. Some controls also require Experimental features or Developer Mode instead of Labs.
 
 ## Network Devices finds nothing
 
 Confirm the feature is enabled, trigger a scan manually, allow the OS firewall prompt if appropriate, and check that you are on the same local network as the device. Active probing is off by default and should not be required for every device type.
 
-## Password Manager is empty after launch
+## The built-in Password Manager is missing
 
-The vault starts locked. Unlock it first. If encryption is unavailable or the profile was moved across machines/accounts, review the portability notes in **Password Manager** and **Data, Backup & Migration**.
+It is retired in 0.5.0, including `vast://passwords`. Use an external extension and its own unlock or recovery flow. Bitwarden, Proton Pass, and iCloud Passwords have smoke-test evidence only. See [Password Manager (retired)](/labs/password-manager/).
 
 ## An extension does not work fully
 

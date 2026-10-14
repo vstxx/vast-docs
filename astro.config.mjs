@@ -83,7 +83,7 @@ export default defineConfig({
         {
           label: 'Vast Labs',
           collapsed: true,
-          items: ['labs/vast-labs', 'labs/automation', 'labs/password-manager', 'labs/network-devices', 'labs/video-and-audio'],
+          items: ['labs/vast-labs', 'labs/automation', { label: 'Password Manager (retired)', slug: 'labs/password-manager' }, 'labs/network-devices', 'labs/video-and-audio'],
         },
         {
           label: 'Customization',

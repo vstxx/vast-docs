@@ -52,11 +52,11 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 | Show internal pages in Command Palette | Include `vast://` destinations in search            |
 | Experimental features                  | Enable experimental UI such as Purist               |
 | Developer Mode                         | Enable development/troubleshooting controls         |
-| Enable Vast Labs                       | Reveal opt-in Labs features                         |
+| Enable Vast Labs                       | Review Labs visibility and individual switches                         |
 
 ## Labs
 
-Individual switches exist for Video & Audio, Network Devices, Automation, Password Manager, Advanced Diagnostics, and Spoofing tools.
+Individual switches exist for Video & Audio, Network Devices, Automation, Advanced Diagnostics, and Spoofing tools. Fresh onboarding selects individual Labs through `DEFAULT_DATA`; the generic `DEFAULT_SETTINGS` fallback is fail closed. Global `labs.enabled` does not gate individual features. The built-in Password Manager is retired in 0.5.0.
 
 ## Network
 
@@ -90,7 +90,7 @@ Enable switch, browser profile, languages, timezone, Do Not Track, custom user a
 
 ## Security
 
-HTTPS-only mode, external-link confirmation, dangerous-download warnings, always-confirm-autofill, reset security settings, and permission defaults for camera, microphone, location, notifications, clipboard, and fullscreen.
+HTTPS-only mode, external-link confirmation, dangerous-download warnings, reset security settings, and permission defaults for camera, microphone, location, notifications, clipboard, and fullscreen.
 
 ## Site Data
 
@@ -114,4 +114,4 @@ Edit the keyboard map or reset all shortcuts.
 
 ## Data
 
-Active Vast data directory, open folder, change directory, clear history, Session Timeline, Password Manager entry point, full `.vastbackup` export/import, local JSON restore point, and backup/migration status reporting.
+Active Vast data directory, open folder, change directory, clear history, Session Timeline, full `.vastbackup` export/import, local JSON restore point, and backup/migration status reporting.

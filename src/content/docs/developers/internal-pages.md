@@ -14,10 +14,12 @@ Vast uses `vast://` routes for browser-owned pages. They are part of the applica
 | `vast://session-timeline` | Workspace snapshot history     | Always                             |
 | `vast://site-data`        | Site-data view                 | Relevant settings/tools            |
 | `vast://avidae`           | Video & Audio                  | Labs                               |
-| `vast://passwords`        | Password Manager               | Labs                               |
+
 | `vast://automation`       | Macro editor                   | Labs                               |
 | `vast://network`          | Network Devices                | Labs                               |
 | `vast://diagnostics`      | Advanced diagnostics/site data | Labs                               |
+
+`vast://passwords` is retired in 0.5.0. The [retirement page](/labs/password-manager/) explains external alternatives.
 
 Advanced settings can control whether internal pages appear as Command Palette destinations.
 

@@ -39,7 +39,7 @@ The local profile includes Vast-owned state such as:
 
 The same root also contains Chromium profile state where applicable, including cookies, Local Storage, IndexedDB, Session Storage, service workers, session data, and related browser state.
 
-Sensitive local features can use separate files within the same profile boundary. Password secrets are OS-encrypted where supported.
+Sensitive local features and extensions can keep separate files within the profile. External password-manager storage and recovery depend on that extension.
 
 ## Open data folder
 
@@ -68,7 +68,7 @@ The previous data directory is left in place rather than being silently deleted.
 * a human-readable migration note;
 * exportable profile data.
 
-The backup can include Vast state, local feature data, the encrypted password-vault file, and browser-profile state where present.
+The backup can include Vast state, local feature data, and browser-profile state where present. Historical files from retired features may remain; retaining them does not restore a working feature.
 
 Disposable data such as ordinary browser caches, shader/GPU caches, crash scratch data, updater scratch data, and temporary folders is intentionally excluded.
 
@@ -84,9 +84,7 @@ Vast can create local JSON restore points for Vast-owned state in addition to fu
 
 ## Password portability
 
-The password vault uses operating-system-backed encryption where available. A backup can contain the encrypted vault, but encrypted secrets may not decrypt under another Windows account or on another machine.
-
-Use Password Manager's explicit CSV export only when you intentionally need plaintext portability. Treat that CSV as a secret.
+The built-in Password Manager is retired in 0.5.0. Use an external manager's documented export and recovery process. Existing OS-encrypted credentials and cookies may not decrypt under another Windows account or on another machine. A full backup does not guarantee external-vault or website-session portability. Treat any plaintext credential export as a secret.
 
 ## Website-session portability
 

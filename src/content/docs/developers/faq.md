@@ -33,7 +33,7 @@ Yes, with compatibility varying by extension. Vast can also support Vast-specifi
 
 ## Can Vast store passwords?
 
-Yes, through the Password Manager Labs feature. Password secrets are stored locally using OS-backed encryption where available.
+The built-in Password Manager is retired in 0.5.0. External Bitwarden, Proton Pass, and iCloud Passwords extensions have smoke-test evidence only; compatibility varies by site and workflow. See [Password Manager (retired)](/labs/password-manager/).
 
 ## Does Automation run arbitrary scripts?
 
@@ -45,7 +45,7 @@ No. It is designed for local/private network discovery, not public-IP scanning.
 
 ## Why is a feature missing?
 
-Check whether Vast Labs, the individual feature switch, Experimental features, or Developer Mode is required. Some entries are deliberately hidden until their parent capability is enabled.
+Check the individual feature switch, Experimental features, or Developer Mode. Fresh onboarding selects individual Labs; the generic fallback is fail closed and global `labs.enabled` does not gate individual features.
 
 ## What changed in 0.3.0?
 
@@ -61,4 +61,4 @@ No. Store installations update through Microsoft Store. The standalone updater i
 
 ## Does global Corner radius change websites?
 
-No. It changes Vast-owned controls and surfaces, including autofill, while preserving structural circles and docked edges. Website content keeps its own styling.
+No. It changes Vast-owned controls and surfaces,  while preserving structural circles and docked edges. Website content keeps its own styling.

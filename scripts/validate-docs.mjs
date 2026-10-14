@@ -35,6 +35,10 @@ for (const file of files) {
   if (/^#\s+/m.test(source.replace(/^---[\s\S]*?---\s*/, ''))) failures.push(`${display}: duplicate H1`);
   if (/gitbook\.io|\{%|\{% endhint|\/pages\/[A-Za-z0-9]+/.test(source)) failures.push(`${display}: contains a GitBook migration artifact`);
   if (/\b(?:relay\.vastbrowser\.com|controlpanel\.vastbrowser\.com)\b|vast:(?:relay|storage|passwords|network|browser):/.test(source)) failures.push(`${display}: contains a prohibited private implementation reference`);
+  if (!display.startsWith('releases/')) {
+    if (/Labs (?:is |start[s]? )?disabled on a fresh profile|Vast Labs disabled|vault starts locked|Provides a local encrypted credential vault|Labs-gated local password vault|Password Manager\s*\|\s*Labs/.test(source)) failures.push(`${display}: obsolete native password or Labs-default guidance`);
+    if (/vast:\/\/passwords/.test(source) && !/retired/i.test(source)) failures.push(`${display}: active retired passwords route`);
+  }
   if (title) {
     if (titles.has(title)) failures.push(`${display}: duplicate title also used by ${titles.get(title)}`);
     titles.set(title, display);

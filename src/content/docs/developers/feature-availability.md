@@ -21,12 +21,12 @@ This reference describes Vast Browser `0.5.0`. Feature gates and defaults can ch
 | Advanced import/export                      | Available    | Always                                      |
 | Extensions                                  | Available    | Open Extensions                             |
 | Extension network providers (content blocking) | Available from `0.2.7` | Install a network-provider extension such as Adblocker for Vast |
-| Video & Audio                               | Labs         | Enable Vast Labs, then Video & Audio        |
-| Network Devices                             | Labs         | Enable Vast Labs, then Network Devices      |
-| Automation                                  | Labs         | Enable Vast Labs, then Automation           |
-| Password Manager                            | Labs         | Enable Vast Labs, then Password Manager     |
-| Advanced Diagnostics                        | Labs         | Enable Vast Labs, then Advanced Diagnostics |
-| Spoofing tools                              | Labs         | Enable Vast Labs, then Spoofing             |
+| Video & Audio                               | Labs         | Review the individual switch for Video & Audio        |
+| Network Devices                             | Labs         | Review the individual switch for Network Devices      |
+| Automation                                  | Labs         | Review the individual switch for Automation           |
+| Built-in Password Manager | Retired | Use an external extension |
+| Advanced Diagnostics                        | Labs         | Review the individual switch for Advanced Diagnostics |
+| Spoofing tools                              | Labs         | Review the individual switch for Spoofing             |
 | Purist layout                               | Experimental | Enable Experimental features                |
 | Deeper developer actions                    | Developer    | Enable Developer Mode                       |
 | Experimental themes                         | Coming soon  | Not active in the current build             |
@@ -35,10 +35,10 @@ Native ad-block filter lists and Cat Addon are not available in 0.5.0. Content b
 
 ## What a Labs switch means
 
-The master **Enable Vast Labs** switch reveals the Labs section. A feature still needs its own local switch before it becomes usable.
+Fresh onboarding selects individual Labs through `DEFAULT_DATA`; the generic `DEFAULT_SETTINGS` fallback is fail closed. Global `labs.enabled` is not the effective gate. Each feature uses its own switch.
 
 Turning a feature off hides and blocks it but does not automatically erase its local data.
 
 ## Why Vast does this
 
-Experimental controls often have a narrower compatibility envelope, more complex local dependencies, or a higher support burden than normal browsing. Explicit gating prevents a fresh profile from feeling like a development console and makes feature status visible instead of implicit.
+Experimental controls often have a narrower compatibility envelope, more complex local dependencies, or a higher support burden than normal browsing. Individual controls make feature status visible and let users disable features they do not need.

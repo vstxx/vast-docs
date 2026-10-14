@@ -3,9 +3,9 @@ title: "Vast Labs"
 description: "Enable optional experimental tools and understand their feature gates and data behavior."
 ---
 
-Vast Labs contains experimental features that are not part of the default stable surface.
+Vast Labs contains experimental features with individual controls and a narrower compatibility envelope than normal browsing.
 
-Labs is disabled on a fresh profile. Enabling Labs reveals additional feature switches. Each Labs feature must still be enabled individually.
+Fresh onboarding selects individual Labs through `DEFAULT_DATA.settings.labs`. The generic `DEFAULT_SETTINGS.labs` fallback remains fail closed. The global `labs.enabled` field does not gate individual features: review each feature switch in Settings rather than assuming a master switch controls availability.
 
 Turning a Labs feature off hides and blocks it, but does not automatically delete its local data.
 
@@ -23,9 +23,9 @@ Discovery is user-triggered. Active probing is separately disabled by default.
 
 Creates local macros from a limited set of visible browser actions. The current automation model is deliberately constrained and does not provide arbitrary shell execution or arbitrary page-script injection.
 
-## Password Manager
+## Password Manager (retired)
 
-Provides a local encrypted credential vault, manual CSV import/export, password generation, health checks, save/update prompts, and same-site autofill helpers.
+The built-in vault and `vast://passwords` are retired in 0.5.0. See [external password-manager guidance](/labs/password-manager/).
 
 ## Advanced Diagnostics
 
