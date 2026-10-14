@@ -40,6 +40,12 @@ for (const file of files) {
     if (/Labs (?:is |start[s]? )?disabled on a fresh profile|Vast Labs disabled|vault starts locked|Provides a local encrypted credential vault|Labs-gated local password vault|Password Manager\s*\|\s*Labs/.test(source)) failures.push(`${display}: obsolete native password or Labs-default guidance`);
     if (/vast:\/\/passwords/.test(source) && !/retired/i.test(source)) failures.push(`${display}: active retired passwords route`);
   }
+  if (display === 'developers/internal-pages.md') {
+    const routeTable = source.match(/^\| Route[^\n]*\n\|[- |]+\n(?:\|[^\n]*\n)+/m)?.[0] ?? '';
+    for (const route of ['vast://automation', 'vast://network', 'vast://diagnostics']) {
+      if (!routeTable.includes('`' + route + '`')) failures.push(`${display}: ${route} must remain inside the route table`);
+    }
+  }
   if (title) {
     if (titles.has(title)) failures.push(`${display}: duplicate title also used by ${titles.get(title)}`);
     titles.set(title, display);

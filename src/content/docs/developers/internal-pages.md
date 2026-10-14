@@ -16,7 +16,6 @@ Vast uses `vast://` routes for browser-owned pages. They are part of the applica
 | `vast://session-timeline` | Workspace snapshot history     | Always                             |
 | `vast://site-data`        | Site-data view                 | Relevant settings/tools            |
 | `vast://avidae`           | Video & Audio                  | Labs                               |
-
 | `vast://automation`       | Macro editor                   | Labs                               |
 | `vast://network`          | Network Devices                | Labs                               |
 | `vast://diagnostics`      | Advanced diagnostics/site data | Labs                               |
