@@ -36,7 +36,7 @@ It is retired in 0.5.0, including `vast://passwords`. Use an external extension 
 
 ## An extension does not work fully
 
-Open Extensions and review its compatibility badge, runtime state, website permissions, Vast permissions, and update state. Partial compatibility usually means the extension expects an API or environment Vast does not fully provide.
+Open Extensions and review its compatibility badge, runtime state, website permissions, Vast permissions, and update state. Partial compatibility usually means the extension expects an API or environment Vast does not fully provide. A Manifest V2 extension that blocks web requests stays installed but is not loaded on the current browser engine; its card says so. Use its Manifest V3 version if one exists.
 
 ## A custom shortcut does not work
 
@@ -50,9 +50,9 @@ Browser cookies and encrypted credentials can be machine/account-bound. A succes
 
 Include the Vast version, platform, clear reproduction steps, expected behavior, actual behavior, and the least-sensitive diagnostic information needed to reproduce the issue. Security vulnerabilities should use the project's private reporting path rather than a normal public issue.
 
-## A downloaded file is missing from the sidebar
+## A downloaded file is missing from the side panel
 
-Confirm you are running the current direct release, 0.5.0. The download fixes introduced in 0.3.0 cover workspaces created early at startup and recover active records after an interface reload. Inspect the Downloads panel and the chosen filesystem location separately. Temporary-session records are not durable history, and clearing a record does not delete its file.
+Confirm you are running the current direct release, 0.5.5. The download fixes introduced in 0.3.0 cover workspaces created early at startup and recover active records after an interface reload. Inspect the Downloads panel and the chosen filesystem location separately. Temporary-session records are not durable history, and clearing a record does not delete its file.
 
 ## Retry fails for a signed-in download
 
@@ -60,7 +60,7 @@ Return to the original workspace, verify that the website is still signed in, an
 
 ## The standalone updater returns 404
 
-The updater needs its version's public GitHub manifest and ZIP. A private candidate is not a public update feed. Check the [official release](https://github.com/vstxx/vast-public/releases/tag/v0.5.0), network access, and the URL shown in its log. A pre-publication `stable-v2.yml` 404 for 0.5.0 should clear after restarting against the public release. Do not replace a failed download with a file from an untrusted mirror.
+The updater needs its version's public GitHub manifest and ZIP. A private candidate is not a public update feed. Check the [official release](https://github.com/vstxx/vast-public/releases/tag/v0.5.5), network access, and the URL shown in its log. A pre-publication `stable-v2.yml` 404 should clear after restarting against the public release. Do not replace a failed download with a file from an untrusted mirror.
 
 ## I installed Vast from Microsoft Store
 
@@ -70,6 +70,12 @@ Use Microsoft Store to check for updates. The standalone direct updater cannot u
 
 Close every instance of that Vast installation normally, reopen it, and review any Windows prompt. Check the update status in Settings and preserve the log if the problem repeats. Portable, unpacked, and renamed copies do not use the normal installed-browser automatic update path. Avoid repeated manual changes to application files while Vast is running.
 
+If Vast shows **Update could not finish**, another Vast process was still running, so the installer waited and changed nothing. Close every Vast window, check Task Manager for a leftover **Vast** process (end it, or restart Windows), then open Vast again to retry.
+
+## Vast does not appear after an update
+
+This affected 0.5.4, which was withdrawn: after its automatic update, Vast could keep running without a window, and opening it again did nothing. Restart Windows, or end **Vast** in Task Manager, then open Vast. It updates to 0.5.5, which always shows its window after an update.
+
 ## Purist or a menu does not respond
 
-Confirm you are running the current direct release, 0.5.0. Try Ctrl/Cmd+L and test the Horizontal layout to isolate the issue. Report the layout, display scaling, window size, and exact control. The relevant Purist hit-testing and More Tabs/context-menu fixes were introduced in 0.3.0.
+Confirm you are running the current direct release, 0.5.5. Try Ctrl/Cmd+L and test the Horizontal layout to isolate the issue. Report the layout, display scaling, window size, and exact control. The relevant Purist hit-testing and More Tabs/context-menu fixes were introduced in 0.3.0.

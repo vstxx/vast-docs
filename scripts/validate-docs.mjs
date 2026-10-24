@@ -35,7 +35,7 @@ for (const file of files) {
   if (/^#\s+/m.test(source.replace(/^---[\s\S]*?---\s*/, ''))) failures.push(`${display}: duplicate H1`);
   if (/gitbook\.io|\{%|\{% endhint|\/pages\/[A-Za-z0-9]+/.test(source)) failures.push(`${display}: contains a GitBook migration artifact`);
   if (/\b(?:relay\.vastbrowser\.com|controlpanel\.vastbrowser\.com)\b|vast:(?:relay|storage|passwords|network|browser):/.test(source)) failures.push(`${display}: contains a prohibited private implementation reference`);
-  if (/current 0\.4\.[23] release|0\.4\.[23]\*\* is the current direct/i.test(source)) failures.push(`${display}: outdated current-release claim`);
+  if (/current 0\.(?:4\.[23]|5\.0) release|0\.(?:4\.[23]|5\.0)\*\* is the current direct|current direct release(?: is)?,? `?0\.5\.0/i.test(source)) failures.push(`${display}: outdated current-release claim`);
   if (!display.startsWith('releases/')) {
     if (/Labs (?:is |start[s]? )?disabled on a fresh profile|Vast Labs disabled|vault starts locked|Provides a local encrypted credential vault|Labs-gated local password vault|Password Manager\s*\|\s*Labs/.test(source)) failures.push(`${display}: obsolete native password or Labs-default guidance`);
     if (/vast:\/\/passwords/.test(source) && !/retired/i.test(source)) failures.push(`${display}: active retired passwords route`);
@@ -60,15 +60,18 @@ for (const file of files) {
 }
 
 const extensions = await readFile(join(root, 'extensions/extensions.md'), 'utf8');
-if (!/listing.URL/i.test(extensions) || !/full Chrome Web Store navigation remains guarded/i.test(extensions)) failures.push('extensions: must distinguish listing-URL installs from guarded full-store navigation');
+if (!/listing URL/i.test(extensions) || !/Install in Vast/.test(extensions) || /navigation remains guarded/i.test(extensions)) failures.push('extensions: must describe in-store Install in Vast and listing-URL installs, without the retired guarded-navigation claim');
+if (!/Manifest V2 extensions that block web requests/.test(extensions)) failures.push('extensions: must explain that MV2 blocking-webRequest extensions are not loaded');
 const policies = await readFile(join(root, 'extensions/publishing-and-policies.md'), 'utf8');
 if (!policies.includes('GPL-3.0-only') || /MIT License applies to Vast-owned/.test(policies)) failures.push('publishing policies: must identify GPL-3.0-only desktop source separately from third-party licenses');
 const config = await readFile(new URL('../astro.config.mjs', import.meta.url), 'utf8');
-if (!routes.has('/releases/0-5-0/')) failures.push('missing current 0.5.0 release page');
-if (!config.includes("'releases/0-5-0'")) failures.push('missing 0.5.0 sidebar release entry');
-const currentRelease = await readFile(join(root, 'releases/0-5-0.md'), 'utf8');
+if (!routes.has('/releases/0-5-5/')) failures.push('missing current 0.5.5 release page');
+if (!config.includes("'releases/0-5-5'")) failures.push('missing 0.5.5 sidebar release entry');
+if (!routes.has('/releases/0-5-0/')) failures.push('missing historical 0.5.0 release page');
+const currentRelease = await readFile(join(root, 'releases/0-5-5.md'), 'utf8');
+if (!/0\.5\.4 was published earlier the same day and withdrawn/.test(currentRelease)) failures.push('0.5.5 release notes: must disclose the withdrawn 0.5.4');
 for (const heading of ["What's new", 'Improvements and fixes', 'Important upgrade information', 'Known limitations']) {
-  if (!currentRelease.includes(`## ${heading}`)) failures.push(`0.5.0 release notes: missing ${heading} section`);
+  if (!currentRelease.includes(`## ${heading}`)) failures.push(`0.5.5 release notes: missing ${heading} section`);
 }
 
 if (files.length < 40) failures.push(`expected at least 40 documentation pages, found ${files.length}`);

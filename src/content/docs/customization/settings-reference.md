@@ -7,41 +7,44 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 
 ## Appearance
 
-| Setting                            | Purpose                                      |
-| ---------------------------------- | -------------------------------------------- |
-| Layout                             | Horizontal, Vertical, or experimental Purist |
-| Theme                              | Dark, Dim, Light, System                     |
-| Force dark mode on websites        | Best-effort dark styling for web content     |
-| Background                         | Base chrome visual style                     |
-| Accent color                       | Primary interface highlight                  |
-| Secondary accent                   | Supporting highlight                         |
-| Background tint                    | Main background tone                         |
-| Surface tint                       | Panel/surface tone                           |
-| Sidebar density                    | Comfortable or compact spacing               |
-| Sidebar mode | Auto, docked, or Pinned over page |
-| Sidebar width | Sidebar width |
-| Sidebar labels                     | Show/hide labels                             |
-| Corner radius                      | Interface roundness                          |
-| Glassiness                         | Translucency effect strength                 |
-| Blur                               | Backdrop blur strength                       |
-| Glow                               | Highlight bloom                              |
-| Borders                            | Surface outline strength                     |
-| Shadow depth                       | Elevation strength                           |
-| Gradients                          | Gradient intensity                           |
-| Panel opacity                      | Side/local panel opacity                     |
-| Chrome opacity                     | Browser-chrome opacity                       |
-| Saturation                         | Interface color intensity                    |
-| Animations                         | General motion                               |
-| Opening animation                  | Startup animation                            |
-| Opening sound                      | Startup audio volume                         |
-| Bookmarks bar                      | Bar visibility                               |
-| Show bookmarks bar only on New Tab | Restrict bar to New Tab                      |
+| Setting                            | Purpose                                                   |
+| ---------------------------------- | --------------------------------------------------------- |
+| Visual profiles                    | Save, apply, import, and export the whole Appearance page |
+| Layout                             | Horizontal, Vertical, or experimental Purist              |
+| Theme                              | Dark, Dim, Light, System                                  |
+| Force dark mode on websites        | Best-effort dark styling for web content                  |
+| Accent color                       | Primary interface highlight                               |
+| Secondary accent                   | Supporting highlight                                      |
+| Background tint                    | Main background tone                                      |
+| Surface tint                       | Panel/surface tone                                        |
+| Animations                         | General motion                                            |
+| Opening animation                  | Startup animation                                         |
+| Opening sound                      | Startup audio volume                                      |
+| Bookmarks bar                      | Bar visibility                                            |
+| Show bookmarks bar only on New Tab | Restrict bar to New Tab                                   |
+| Clean toolbar icons                | Plain, slightly larger toolbar icons                      |
+| Sidebar density                    | Comfortable or compact spacing in the vertical sidebar    |
+| Side panel mode                    | Automatic, Beside the page, or Pinned over page           |
+| Side panel width                   | Side panel width                                          |
+| Side panel labels                  | Show/hide section labels                                  |
+| Corner radius                      | Interface roundness                                       |
+| Background blur                    | Blur behind Settings, the command palette, and dialogs    |
+| Transparency                       | See-through strength of floating surfaces                 |
+| Frost                              | Frosting of see-through surfaces                          |
+| Glow                               | Highlight bloom                                           |
+| Borders                            | Surface outline strength                                  |
+| Shadow depth                       | Elevation strength                                        |
+| Gradients                          | Gradient intensity                                        |
+| Panel opacity                      | Dark theme internal-page panel tint                       |
+| Saturation                         | Interface color intensity                                 |
+
+See [Appearance Reference](/customization/appearance-reference/) for ranges and Visual Profiles.
 
 ## Advanced
 
 | Setting                                | Purpose                                             |
 | -------------------------------------- | --------------------------------------------------- |
-| Compact UI density                     | Tighten general controls                            |
+| Compact sidebar                        | Same as Sidebar density: Compact                    |
 | Memory target (best effort)            | Resource-management target                          |
 | Hibernate after minutes                | When inactive tabs enter sleep                      |
 | Discard after minutes                  | When inactive tabs can unload more aggressively     |
@@ -49,12 +52,12 @@ This is the complete high-level map of the current Settings surface. Labs-gated 
 | Confirm before closing many tabs       | Bulk-close guardrail                                |
 | Confirm before deleting workspace      | Workspace-deletion guardrail                        |
 | Show advanced More actions             | Reveal deeper browser actions                       |
-| Show internal pages in Command Palette | Include `vast://` destinations in search            |
+| Show internal pages in command palette | Include `vast://` destinations in search            |
 | Experimental features                  | Enable experimental UI such as Purist               |
 | Developer Mode                         | Enable development/troubleshooting controls         |
 
 
-The sidebar visibility button is beside the address bar. Its pin control switches between docked and pinned-over-page behavior; only a pinned sidebar can be dragged. The position is saved locally.
+The side panel (notes, bookmarks, and history) has its visibility button beside the address bar. Its pin control switches between beside-the-page and pinned-over-page behavior; only a pinned side panel can be dragged. The position is saved locally.
 
 ## Labs
 

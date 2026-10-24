@@ -21,6 +21,8 @@ Keep a small test profile with representative normal tabs. Native tab access exc
 
 Uses the supported Chrome extension runtime and standard Chrome permissions, host permissions, content scripts, and extension surfaces. Vast accepts Manifest V2 and Manifest V3 packages. A Manifest V2 package requires an explicit string `content_security_policy` limited to `'self'`/`'none'` sources with `object-src 'none'`. A successful install does not guarantee that every Chrome API used by the package is supported.
 
+On the current browser engine (since Vast 0.5.5), Vast does not load a Manifest V2 package that requests `webRequestBlocking` unless it is a [network provider](#network-provider-extensions): a native blocking `webRequest` listener would stall every request in its session. Such a package stays installed and shows the reason on the Extensions page. Use Manifest V3 (`declarativeNetRequest`) or the network-provider bridge instead.
+
 ### Vast Native
 
 Uses the permission-scoped Vast Native API. A native extension declares a local JavaScript background module and may provide local popup, options, or sidebar pages.

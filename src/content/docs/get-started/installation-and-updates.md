@@ -1,19 +1,19 @@
 ---
 title: "Installation & Updates"
-description: "Install Vast 0.5.0 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
+description: "Install Vast 0.5.5 on Windows and choose the correct update path for installer, Portable, and Microsoft Store."
 ---
 
 ## Current release
 
-Vast **0.5.0** is the current direct Windows x64 release. The previous direct release is 0.4.3. Read the [release notes](/releases/0-5-0/); [0.4.3 notes](/releases/0-4-3/) remain available for historical reference.
+Vast **0.5.5** is the current direct Windows x64 release. The previous direct release is 0.5.0; 0.5.4 was withdrawn on its release day and replaced by 0.5.5. Read the [release notes](/releases/0-5-5/); [0.5.0 notes](/releases/0-5-0/) remain available for historical reference.
 
 | Package | Use it for | Updates |
 | --- | --- | --- |
-| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.5.0/Vast-Setup-0.5.0.exe) | A normal installed copy of Vast | Built-in background updates from 0.4.3 onward, or the direct standalone updater |
-| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.5.0/Vast-0.5.0-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
+| [Windows installer](https://github.com/vstxx/vast-public/releases/download/v0.5.5/Vast-Setup-0.5.5.exe) | A normal installed copy of Vast | Built-in background updates from 0.4.3 onward, or the direct standalone updater |
+| [Portable](https://github.com/vstxx/vast-public/releases/download/v0.5.5/Vast-0.5.5-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
 | [Microsoft Store](https://apps.microsoft.com/detail/9MTWRJCKMDTX) | A Store-managed installation | Microsoft Store only |
 
-The Store has a separate review and rollout. Store 0.5.0 availability is unconfirmed. Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
+The Store has a separate review and rollout. Store 0.5.5 availability is unconfirmed. Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
 
 Windows x64 is the tested release target. macOS and Linux build targets do not imply equivalent release support.
 
@@ -31,21 +31,23 @@ Use **Settings → Search → Set browser as default** to open Windows default-a
 
 Eligible packaged direct installations check for updates shortly after startup. When an update is available, Vast downloads it in the background and verifies it before preparing installation for the next launch.
 
-**Important for 0.4.2 users:** its automatic updater can fail at the next-start installer handoff. The public legacy feed is therefore pinned to 0.4.2. Close Vast and run the 0.5.0 installer or standalone updater once. A direct-install upgrade preserves the profile. Installed 0.4.3 and later use `stable-v2.yml` for automatic updates to 0.5.0; `latest.yml` remains pinned to 0.4.2; do not wait for 0.4.2 to install 0.5.0 automatically.
+**Important for 0.4.2 users:** its automatic updater can fail at the next-start installer handoff. The public legacy feed is therefore pinned to 0.4.2. Close Vast and run the 0.5.5 installer or standalone updater once. A direct-install upgrade preserves the profile. Installed 0.4.3 and later use `stable-v2.yml` for automatic updates to 0.5.5; `latest.yml` remains pinned to 0.4.2; do not wait for 0.4.2 to install 0.5.5 automatically.
 
-Close Vast normally and reopen it to apply a prepared update. An external helper waits for the old browser process before installing. Windows may require an elevation prompt for protected installation locations. If the handoff cannot start, Vast keeps the current version available; failed attempts are bounded rather than retried indefinitely.
+Close Vast normally and reopen it to apply a prepared update. An external helper waits for the old browser process before installing. The installer runs only once every Vast process has closed; if one is still running, it waits and changes nothing, and the update is retried on a later start. Windows may require an elevation prompt for protected installation locations. If the handoff cannot start, Vast keeps the current version available; failed attempts are bounded rather than retried indefinitely.
 
 The installation and profile are matched when preparing an update, including custom installation and data paths. Portable, renamed executables, unpacked copies, development builds, and Store installations do not use this normal installed-browser automatic path. Read the update status in Settings when automatic updates are unavailable.
 
+**If you installed 0.5.4:** after its automatic update, Vast could keep running without showing a window, and opening it again did nothing. Restart Windows, or end **Vast** in Task Manager, then open Vast. It shows normally and updates to 0.5.5, which fixes this.
+
 ## Standalone updater
 
-The [Vast 0.5.0 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.5.0/VastUpdater-0.5.0.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
+The [Vast 0.5.5 standalone updater](https://github.com/vstxx/vast-public/releases/download/v0.5.5/VastUpdater-0.5.5.exe) downloads the public update manifest and verifies the update ZIP before replacing an existing direct installation's runtime. It is not a fresh-install package.
 
 Close Vast and use the updater for an existing direct installation. If installation detection fails, review the log and the updater's explicit installation-path option instead of pointing it at a profile directory.
 
 **Do not use this executable for Microsoft Store/MSIX or Portable.** A Store package must be updated by Microsoft Store. The standalone executable does not provide a Store migration or a dedicated MSIX-detection guarantee.
 
-A 404 for the version's public manifest means that release URL is unavailable. A private release candidate is not a public update feed. If you saw a `stable-v2.yml` 404 before the 0.5.0 publication, close and restart Vast to retry against the now-public release; if it persists, see [Troubleshooting](/developers/troubleshooting/).
+A 404 for the version's public manifest means that release URL is unavailable. A private release candidate is not a public update feed. If you saw a `stable-v2.yml` 404 before a release was published, close and restart Vast to retry against the now-public release; if it persists, see [Troubleshooting](/developers/troubleshooting/).
 
 ## Portable updates
 
@@ -61,12 +63,12 @@ Normal updates preserve profile data. Back up important data before a channel sw
 
 ## Verify a download
 
-The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.5.0) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
+The [release assets](https://github.com/vstxx/vast-public/releases/tag/v0.5.5) include SHA-256/SHA-512 lists, source provenance, update metadata, and FFmpeg corresponding source.
 
 For example, compute a local installer hash in PowerShell:
 
 ~~~powershell
-Get-FileHash .\Vast-Setup-0.5.0.exe -Algorithm SHA256
+Get-FileHash .\Vast-Setup-0.5.5.exe -Algorithm SHA256
 ~~~
 
-Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.5.0/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.5.0/Vast-0.5.0-update.zip) is an updater payload, not an MSIX package.
+Compare it with the matching installer entry in [SHA256SUMS.txt](https://github.com/vstxx/vast-public/releases/download/v0.5.5/SHA256SUMS.txt). Do not run a file with a mismatching hash. The [full update ZIP](https://github.com/vstxx/vast-public/releases/download/v0.5.5/Vast-0.5.5-update.zip) is an updater payload, not an MSIX package.

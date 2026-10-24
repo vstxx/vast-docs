@@ -18,6 +18,12 @@ Configurable permission categories include:
 
 Global defaults can be Ask, Always allow, or Block where appropriate.
 
+## Permission prompts
+
+With a permission set to Ask, a site that requests it gets Vast's prompt. Sites that check first, before requesting, see that permission as not yet decided rather than blocked, as they would in Chrome. This is what lets calling apps such as Google Meet, Zoom, and Microsoft Teams ask for the camera and microphone. A permission you have blocked stays blocked.
+
+**Allow once** lasts for the visit: the site sees your camera and microphone, including their names, and is not asked again until you leave the site or close the tab.
+
 ## Per-site overrides
 
 A website can receive a specific Allow or Block override. Overrides are associated with the site origin and can also be workspace-aware.

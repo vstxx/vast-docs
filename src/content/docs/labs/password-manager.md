@@ -13,4 +13,4 @@ The release evidence covers smoke tests only. It does not certify every website,
 
 ## Existing data
 
-Back up your existing profile before upgrading. Keeping historical files in a profile or backup does not make the retired vault accessible in 0.5.0. Do not rely on importing a full backup to recover a working native password manager. Use the recovery/export options available in the older version before upgrading, and keep any plaintext export secure. See [Data, Backup & Migration](/privacy/data-backup-and-migration/).
+Back up your existing profile before upgrading. Keeping historical files in a profile or backup does not make the retired vault accessible in 0.5.0 or later. Do not rely on importing a full backup to recover a working native password manager. Use the recovery/export options available in the older version before upgrading, and keep any plaintext export secure. See [Data, Backup & Migration](/privacy/data-backup-and-migration/).

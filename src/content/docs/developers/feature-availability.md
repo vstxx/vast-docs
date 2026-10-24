@@ -6,7 +6,7 @@ description: "Distinguish stable, experimental, Labs-gated, developer-only, and 
 Vast deliberately distinguishes stable features from opt-in and experimental surfaces.
 
 :::note[Source verification]
-This reference describes Vast Browser `0.5.0`. Feature gates and defaults can change in later releases; extension compatibility also depends on the particular extension.
+This reference describes Vast Browser `0.5.5`. Feature gates and defaults can change in later releases; extension compatibility also depends on the particular extension.
 :::
 
 | Feature                                     | Status       | How it becomes available                    |
@@ -21,6 +21,8 @@ This reference describes Vast Browser `0.5.0`. Feature gates and defaults can ch
 | Advanced import/export                      | Available    | Always                                      |
 | Extensions                                  | Available    | Open Extensions                             |
 | Extension network providers (content blocking) | Available from `0.2.7` | Install a network-provider extension such as Adblocker for Vast |
+| Chrome Web Store browsing and **Install in Vast** | Available from `0.5.5` | Open the store in a tab; packaged release on its bundled engine |
+| Visual Profiles (`.vastvisual`)             | Available from `0.5.5` | Settings → Appearance → Visual profiles     |
 | Video & Audio                               | Labs         | Review the individual switch for Video & Audio        |
 | Network Devices                             | Labs         | Review the individual switch for Network Devices      |
 | Automation                                  | Labs         | Review the individual switch for Automation           |
@@ -31,7 +33,7 @@ This reference describes Vast Browser `0.5.0`. Feature gates and defaults can ch
 | Deeper developer actions                    | Developer    | Enable Developer Mode                       |
 | Experimental themes                         | Coming soon  | Not active in the current build             |
 
-Native ad-block filter lists and Cat Addon are not available in 0.5.0. Content blocking beyond the built-in common-tracker policy is provided by an installed extension. Store and Portable update behavior differs from installed direct builds; see [Installation & Updates](/get-started/installation-and-updates/).
+Native ad-block filter lists and Cat Addon are not available in 0.5.5. Manifest V2 extensions that block web requests stay installed but are not loaded; see [Extensions](/extensions/extensions/). Content blocking beyond the built-in common-tracker policy is provided by an installed extension. Store and Portable update behavior differs from installed direct builds; see [Installation & Updates](/get-started/installation-and-updates/).
 
 ## What a Labs switch means
 

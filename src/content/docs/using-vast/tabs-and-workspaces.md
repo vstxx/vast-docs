@@ -50,6 +50,8 @@ Each workspace has:
 * a session identity policy;
 * a network route policy.
 
+In the vertical sidebar, clicking the active workspace collapses the workspace list to just that workspace; click it again to show them all. Vast remembers the choice. Clicking another workspace still switches to it.
+
 ## Workspace identity modes
 
 | Workspace mode | Browser partition | Website cookies and storage | Extensions |
@@ -74,9 +76,11 @@ Custom proxy and bypass rules apply to that workspace identity rather than globa
 
 Vast can require confirmation before workspace deletion. This is recommended because deleting a workspace affects its tab organization and associated local state.
 
-## More Tabs and restored sessions
+## All tabs and restored sessions
 
-When tabs no longer fit, open **More Tabs** to search by title or address, inspect tab state, switch to a result, or close an individual tab. In 0.3.0 its menu is placed above page content without colliding with neighboring browser controls.
+In the Horizontal layout every tab stays in the strip. Tabs shrink to fit down to a minimum width; past that the strip scrolls. Use the mouse wheel or a touchpad to scroll it, and the active tab glides into view when you switch or open a tab. Fading edges show that more tabs are hidden on either side.
+
+While the strip overflows, **All tabs** lets you search by title or address, inspect tab state, switch to a result, or close an individual tab.
 
 Inactive restored tabs can remain discarded until visited, avoiding loading every saved page at startup. A discarded page reloads when activated; its unsaved in-page state may not survive. Keep important work saved and configure pinned-tab protection where appropriate.
 

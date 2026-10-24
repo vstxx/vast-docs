@@ -27,7 +27,7 @@ Fingerprint and identity spoofing is best-effort and cannot guarantee that every
 
 ## Extensions
 
-Extension compatibility varies. Some Chrome APIs or complex extension assumptions may be partially supported or unsupported. Direct Chrome Web Store listing-URL installation is available; full store navigation remains guarded in packaged 0.5.0. Extensions do not run in private/ephemeral sessions. Password-manager evidence covers smoke tests only.
+Extension compatibility varies. Some Chrome APIs or complex extension assumptions may be partially supported or unsupported. The Chrome Web Store can be browsed inside Vast and extensions installed with **Install in Vast** or a pasted listing URL. Manifest V2 extensions that block web requests stay installed but are not loaded on the current browser engine. Extensions do not run in private/ephemeral sessions. Password-manager evidence covers smoke tests only.
 
 ## Password portability
 
@@ -41,11 +41,13 @@ Cookies and browser session state are included in normal profile handling where 
 
 Labs features may change faster than the stable browsing surface. Their UI, storage model, or compatibility behavior can change between releases.
 
-## Distribution and update limits in 0.5.0
+## Distribution and update limits in 0.5.5
 
 The direct Windows release is intentionally unsigned. Store certification and availability are separate from GitHub publication. The direct standalone updater does not update Microsoft Store/MSIX or Portable installations.
 
-The installed 0.4.2 automatic updater can fail during the next-start installer handoff. Its legacy feed stays pinned to 0.4.2; install 0.5.0 manually once to receive future automatic updates through the new feed. Direct and Store installations have separate default profile roots.
+The installed 0.4.2 automatic updater can fail during the next-start installer handoff. Its legacy feed stays pinned to 0.4.2; install 0.5.5 manually once to receive future automatic updates through the new feed. Direct and Store installations have separate default profile roots.
+
+An update installs only after every Vast process has closed; otherwise it waits for the next start and changes nothing. 0.5.4 was withdrawn on the day it was published: after its automatic update, Vast could keep running without showing a window. If that happened, restart Windows or end Vast in Task Manager, then open Vast; it updates to 0.5.5.
 
 Extensions, including Adblocker for Vast, do not run in private or temporary workspaces. A private download's saved file can remain on disk even though its history is not persisted. Retrying a download cannot restore expired authentication or a destroyed temporary session.
 

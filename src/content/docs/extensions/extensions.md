@@ -14,15 +14,21 @@ The Extensions page separates **Explore** (the Vast Extensions catalog) from **I
 Extensions can come from:
 
 * Vast Extensions catalog;
-* direct Chrome Web Store listing-URL installation, including Apple's upstream iCloud Passwords listing;
+* the Chrome Web Store, browsed inside Vast, or a pasted listing URL, including Apple's upstream iCloud Passwords listing;
 * a local Vast extension package;
 * an unpacked developer extension.
 
 The catalog lists Bitwarden and Proton Pass with upstream publisher attribution; their packages keep the original extension IDs. iCloud Passwords is retrieved from Apple upstream with its original ID, not repackaged or hosted by Vast. A catalog listing does not imply that its upstream publisher has endorsed Vast.
 
-## Chrome Web Store listing installation
+## Chrome Web Store installation
 
-Use the direct listing-URL installation flow in Extensions with the extension's Chrome Web Store listing URL. Review the package, compatibility, and requested permissions before approving it. Full Chrome Web Store navigation remains guarded in packaged 0.5.0; listing-URL installation does not mean that unrestricted store browsing or every Chrome extension works.
+Since 0.5.5 you can browse the Chrome Web Store inside Vast. On an extension's listing, Vast shows its own **Install in Vast** button beside the address bar; the store page itself gets no special access. Pasting a listing URL into Extensions still works. Either way, review the package, compatibility, and requested permissions before approving it.
+
+Store browsing is enabled only on the patched browser engine that ships with Vast. Installing from the store does not mean every Chrome extension works in Vast.
+
+### Manifest V2 extensions that block web requests
+
+On the current browser engine, a Manifest V2 extension that blocks web requests (`webRequestBlocking`) would stop every page from loading. Vast keeps such an extension installed but does not load it, and the Extensions page shows why. Use the extension's Manifest V3 version if one exists. [Adblocker for Vast](/extensions/adblocker-for-vast/) is not affected: it filters requests through Vast's network-provider capability.
 
 Bitwarden, Proton Pass, and iCloud Passwords have smoke-test evidence only. Every website, vault workflow, and integration is not certified. These extensions are unavailable in private/ephemeral workspaces.
 

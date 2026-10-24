@@ -22,11 +22,11 @@ You can:
 - archive notes without deleting them;
 - link a note to the active page.
 
-Deleting a note offers a short undo action. Archived notes stay in the local profile until you delete them.
+Deleting a note from the side panel or the Notes page asks for confirmation first, then offers a short undo action. Archived notes stay in the local profile until you delete them.
 
 ## Side panel notes
 
-The sidebar provides a compact note view for the active workspace or page. Use the full Notes page when you need search, tags, Markdown preview, archives, or broader organization.
+The side panel provides a compact note view for the active workspace or page. Use the full Notes page when you need search, tags, Markdown preview, archives, or broader organization.
 
 ## Export
 
