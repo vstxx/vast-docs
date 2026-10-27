@@ -13,7 +13,7 @@ Vast **0.5.5** is the current direct Windows x64 release. The previous direct re
 | [Portable](https://github.com/vstxx/vast-public/releases/download/v0.5.5/Vast-0.5.5-Portable.exe) | A separate portable copy | Download the newer Portable executable; close the old copy before replacing it |
 | [Microsoft Store](https://apps.microsoft.com/detail/9MTWRJCKMDTX) | A Store-managed installation | Microsoft Store only |
 
-The Store has a separate review and rollout. Store 0.5.5 availability is unconfirmed. Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
+The Store has a separate review and rollout. Vast 0.5.5 is available in Microsoft Store (Store package 1.2.13.0). Its available version can lag the direct release; check the Store listing and your installed version. A development MSIX is not a Store submission or an official public package.
 
 Windows x64 is the tested release target. macOS and Linux build targets do not imply equivalent release support.
 
