@@ -47,9 +47,9 @@ No. It is designed for local/private network discovery, not public-IP scanning.
 
 Check the individual feature switch, Experimental features, or Developer Mode. Fresh onboarding selects individual Labs; the generic fallback is fail closed and global `labs.enabled` does not gate individual features.
 
-## What changed in 0.3.0?
+## What changed in the current release?
 
-See the [complete release notes](/releases/0-3-0/) for downloads, global radius, background updates, menus, Settings, and Windows integration.
+See the [Vast 0.5.5 release notes](/releases/0-5-5/) for what changed in the current release.
 
 ## Where did the native Adblocker settings go?
 
